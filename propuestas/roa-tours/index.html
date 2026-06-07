@@ -41,17 +41,29 @@
     body { font-family: "Inter", sans-serif; }
     h1, h2, h3, h4 { font-family: "Space Grotesk", "Inter", sans-serif; }
 
-    .doc-section { break-inside: avoid; }
     .doc-card { break-inside: avoid; }
     .doc-table { break-inside: avoid; }
 
     @media print {
-      @page { size: A4; margin: 14mm 12mm; }
-      body { background: #ffffff !important; }
+      @page { size: A4; margin: 0; }
+      html, body { background: #ffffff !important; }
       .no-print { display: none !important; }
-      .doc-page { box-shadow: none !important; border: none !important; max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
-      .doc-section { page-break-inside: avoid; }
+      .doc-page {
+        box-shadow: none !important;
+        border: none !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 16mm 14mm !important;
+      }
+      .doc-section { margin-bottom: 22px !important; }
+      .doc-card { page-break-inside: avoid; break-inside: avoid; }
+      .doc-table { page-break-inside: avoid; break-inside: avoid; }
       .doc-table-wrap { overflow: visible !important; }
+      .doc-section .grid { display: block !important; }
+      .doc-section .grid > .doc-card { margin-bottom: 10px; }
+      .doc-section .grid > .doc-card:last-child { margin-bottom: 0; }
+      h1, h2, h3 { page-break-after: avoid; break-after: avoid; }
+      p, li { orphans: 3; widows: 3; }
     }
   </style>
 </head>
