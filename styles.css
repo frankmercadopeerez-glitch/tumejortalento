@@ -4,16 +4,16 @@
 
 :root {
   --black:      #000000;
-  --blue:       #0062ff;
-  --blue-dark:  #004fd9;
+  --blue:       #5B3A82;
+  --blue-dark:  #3F2761;
   --blue-glow:  rgba(0, 98, 255, 0.35);
   --blue-light: rgba(0, 98, 255, 0.08);
-  --gold:       #f59e0b;
+  --gold:       #C9A227;
   --white:      #ffffff;
   --bg:         #ffffff;
   --card:       #ffffff;
   --text:       #0f172a;
-  --text-muted: #3b5a7e;
+  --text-muted: #6B5A7A;
   --border:     #d0dff8;
   --radius-sm:  4px;
   --radius:     6px;
@@ -91,7 +91,7 @@ p { line-height: 1.75; }
   background: none;
   cursor: pointer;
 }
-.nav-link:hover, .nav-link.active { color: #0062ff; border-bottom-color: #0062ff; }
+.nav-link:hover, .nav-link.active { color: #5B3A82; border-bottom-color: #5B3A82; }
 
 #mobile-menu {
   max-height: 0;
@@ -103,7 +103,7 @@ p { line-height: 1.75; }
 
 /* ── Botones ──────────────────────────────── */
 .btn-primary {
-  background: #0062ff;
+  background: #5B3A82;
   color: #ffffff;
   padding: 0.9rem 2rem;
   border-radius: var(--radius-sm);
@@ -121,18 +121,18 @@ p { line-height: 1.75; }
   text-decoration: none;
   line-height: 1.4;
 }
-.btn-primary:hover  { background: #004fd9; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,98,255,0.52); }
+.btn-primary:hover  { background: #3F2761; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,98,255,0.52); }
 .btn-primary:active { transform: translateY(0); box-shadow: 0 2px 8px rgba(0,98,255,0.3); }
 
 .btn-secondary {
-  background: #ffffff; color: #0062ff;
+  background: #ffffff; color: #5B3A82;
   padding: 0.9rem 2rem; border-radius: var(--radius-sm);
   font-family: inherit; font-weight: 700; font-size: 0.95rem;
-  border: 2px solid #0062ff; cursor: pointer;
+  border: 2px solid #5B3A82; cursor: pointer;
   transition: all 0.22s ease; display: inline-flex; align-items: center; gap: 0.6rem;
   text-decoration: none; line-height: 1.4;
 }
-.btn-secondary:hover { background: #0062ff; color: #ffffff; box-shadow: 0 6px 20px rgba(0,98,255,0.32); transform: translateY(-2px); }
+.btn-secondary:hover { background: #5B3A82; color: #ffffff; box-shadow: 0 6px 20px rgba(0,98,255,0.32); transform: translateY(-2px); }
 
 .btn-outline {
   background: rgba(255,255,255,0.09); color: #ffffff;
@@ -152,7 +152,7 @@ p { line-height: 1.75; }
   transition: all 0.22s ease; display: inline-flex; align-items: center; gap: 0.5rem;
   text-decoration: none; line-height: 1.4;
 }
-.btn-ghost:hover { border-color: #0062ff; color: #0062ff; background: var(--blue-light); transform: translateY(-2px); }
+.btn-ghost:hover { border-color: #5B3A82; color: #5B3A82; background: var(--blue-light); transform: translateY(-2px); }
 
 /* ── Tarjetas ─────────────────────────────── */
 .hover-card {
@@ -178,13 +178,13 @@ p { line-height: 1.75; }
 }
 .badge-teal  { background: rgba(20,184,166,0.1);  color: #0f766e; border: 1px solid rgba(20,184,166,0.3); }
 .badge-gold  { background: rgba(245,158,11,0.1);  color: #b45309; border: 1px solid rgba(245,158,11,0.3); }
-.badge-blue  { background: rgba(0,98,255,0.1);    color: #0062ff; border: 1px solid rgba(0,98,255,0.25); }
+.badge-blue  { background: rgba(0,98,255,0.1);    color: #5B3A82; border: 1px solid rgba(0,98,255,0.25); }
 .badge-slate { background: rgba(100,116,139,0.1); color: #475569; border: 1px solid rgba(100,116,139,0.25); }
 
 /* ── Section labels ───────────────────────── */
 .section-label {
   font-size: 0.72rem; font-weight: 800; letter-spacing: 0.2em;
-  text-transform: uppercase; color: #0062ff;
+  text-transform: uppercase; color: #5B3A82;
   display: inline-block; padding: 0.3rem 0; margin-bottom: 0.4rem;
 }
 
@@ -204,7 +204,7 @@ input, textarea, select {
 }
 input:hover, textarea:hover, select:hover { border-color: #a8c4f0; }
 input:focus, textarea:focus, select:focus {
-  outline: none; border-color: #0062ff;
+  outline: none; border-color: #5B3A82;
   box-shadow: 0 0 0 3px rgba(0,98,255,0.13); background: #ffffff;
 }
 
@@ -217,7 +217,7 @@ input:focus, textarea:focus, select:focus {
   white-space: nowrap; font-family: inherit;
 }
 .filter-btn:hover, .filter-btn.active {
-  border-color: #0062ff; background: #0062ff; color: #ffffff;
+  border-color: #5B3A82; background: #5B3A82; color: #ffffff;
   box-shadow: 0 4px 14px rgba(0,98,255,0.3);
 }
 
@@ -225,7 +225,7 @@ input:focus, textarea:focus, select:focus {
 .progress-bar { height: 5px; border-radius: 2px; background: var(--border); overflow: hidden; }
 .progress-fill {
   height: 100%; border-radius: 2px;
-  background: linear-gradient(90deg,#0062ff,#0040cc);
+  background: linear-gradient(90deg,#5B3A82,#0040cc);
   transition: width 1.5s cubic-bezier(0.25,0.46,0.45,0.94);
   box-shadow: 0 0 10px rgba(0,98,255,0.4);
 }
@@ -242,19 +242,19 @@ input:focus, textarea:focus, select:focus {
   opacity: 0; transform: translateY(1rem); pointer-events: none;
   transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   position: fixed; bottom: 1.5rem; right: 1.5rem;
-  background: #0062ff; color: #ffffff; border: none;
+  background: #5B3A82; color: #ffffff; border: none;
   border-radius: var(--radius-sm); width: 44px; height: 44px;
   cursor: pointer; box-shadow: 0 6px 20px rgba(0,98,255,0.4);
   display: flex; align-items: center; justify-content: center; z-index: 100;
 }
-#back-to-top:hover { background: #004fd9; box-shadow: 0 10px 32px rgba(0,98,255,0.6); transform: translateY(-2px); }
+#back-to-top:hover { background: #3F2761; box-shadow: 0 10px 32px rgba(0,98,255,0.6); transform: translateY(-2px); }
 #back-to-top.visible { opacity: 1; transform: none; pointer-events: auto; }
 
 /* ── Scrollbar ────────────────────────────── */
 ::-webkit-scrollbar       { width: 7px; height: 7px; }
 ::-webkit-scrollbar-track { background: #f1f5f9; }
-::-webkit-scrollbar-thumb { background: #0062ff; border-radius: 8px; border: 2px solid #f1f5f9; }
-::-webkit-scrollbar-thumb:hover { background: #004fd9; }
+::-webkit-scrollbar-thumb { background: #5B3A82; border-radius: 8px; border: 2px solid #f1f5f9; }
+::-webkit-scrollbar-thumb:hover { background: #3F2761; }
 
 /* ── Chip de categoría ────────────────────── */
 .cat-chip {
@@ -267,7 +267,7 @@ input:focus, textarea:focus, select:focus {
 .dark-section-header { position: relative; }
 .dark-section-header::before {
   content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
-  background: linear-gradient(90deg,#0062ff 0%,#004fd9 50%,transparent 100%);
+  background: linear-gradient(90deg,#5B3A82 0%,#3F2761 50%,transparent 100%);
 }
 
 /* ── Footer ───────────────────────────────── */

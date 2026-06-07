@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Propuesta · Fortalecimiento ROA — NCS Consultoría</title>
+  <link rel="icon" href="../../images/ncs-logo.jpg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ["Space Grotesk", "Inter", "sans-serif"],
+            sans: ["Inter", "sans-serif"],
+          },
+          colors: {
+            brand: {
+              50: "#f7f4fa",
+              100: "#ece4f2",
+              200: "#d6c5e3",
+              300: "#bb9fd0",
+              400: "#9b76b8",
+              500: "#7d54a0",
+              600: "#623f85",
+              700: "#4a2f68",
+              800: "#34204A",
+              900: "#1F1330",
+            },
+            accent: "#5B3A82",
+            gold: "#C9A227",
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body { font-family: "Inter", sans-serif; }
+    h1, h2, h3, h4 { font-family: "Space Grotesk", "Inter", sans-serif; }
+
+    .doc-section { break-inside: avoid; }
+    .doc-card { break-inside: avoid; }
+    .doc-table { break-inside: avoid; }
+
+    @media print {
+      @page { size: A4; margin: 14mm 12mm; }
+      body { background: #ffffff !important; }
+      .no-print { display: none !important; }
+      .doc-page { box-shadow: none !important; border: none !important; max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
+      .doc-section { page-break-inside: avoid; }
+      .doc-table-wrap { overflow: visible !important; }
+    }
+  </style>
+</head>
+<body class="bg-slate-200">
+
+  <!-- Barra flotante (no se imprime) -->
+  <div class="no-print fixed top-0 inset-x-0 z-50 bg-brand-900 text-white py-3 px-4 sm:px-5 flex items-center justify-between gap-3 shadow-lg">
+    <div class="flex items-center gap-2.5 min-w-0">
+      <a href="../index.html" class="shrink-0 text-white/70 hover:text-white transition" aria-label="Volver a Propuestas">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+      </a>
+      <img src="../../images/ncs-logo.jpg" alt="NCS" class="w-8 h-8 rounded object-cover shrink-0" />
+      <span class="text-sm font-semibold tracking-wide truncate">Propuesta — Fortalecimiento ROA</span>
+    </div>
+    <button
+      onclick="window.print()"
+      class="shrink-0 inline-flex items-center gap-2 bg-[#C9A227] text-brand-900 font-bold text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-md hover:brightness-95 transition whitespace-nowrap"
+    >
+      <span class="hidden sm:inline">Imprimir / Guardar como PDF</span>
+      <span class="sm:hidden">Imprimir / PDF</span>
+    </button>
+  </div>
+
+  <!-- Documento -->
+  <main class="doc-page max-w-3xl mx-auto bg-white shadow-xl my-24 print:my-0 px-8 py-10 md:px-14 md:py-14 text-[#2C1B3D]">
+
+    <!-- Encabezado del documento -->
+    <header class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 pb-8 border-b-2 border-brand-800">
+      <div class="flex items-start gap-4">
+        <img src="../../images/ncs-logo.jpg" alt="NCS - Nohemí Carrillo S." class="w-16 h-16 rounded-lg object-cover shadow shrink-0" />
+        <div>
+          <h2 class="font-display text-xl font-bold text-brand-900 mb-0.5">Nohemí Carrillo S.</h2>
+          <p class="text-[11px] uppercase tracking-[0.18em] text-[#C9A227] font-bold mb-1.5">Consultoría en Gestión Turística y Empresarial</p>
+          <div class="text-xs text-[#6B5A7A] space-y-0.5 leading-relaxed">
+            <p>Lcda. Ciencias de la Comunicación &amp; Adm. de Empresas</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-left md:text-right min-w-0 md:max-w-[55%]">
+        <p class="text-[11px] uppercase tracking-[0.3em] text-[#C9A227] font-bold mb-1">Propuesta Integral</p>
+        <h1 class="font-display text-2xl md:text-3xl font-bold text-brand-900 mb-1">Fortalecimiento ROA</h1>
+        <p class="text-xs text-[#6B5A7A]">Fecha: 08 de Abril, 2026</p>
+        <p class="text-xs text-[#6B5A7A]">Cliente: ROA TOURS CTG</p>
+      </div>
+    </header>
+
+    <!-- Introducción -->
+    <section class="py-8 doc-section">
+      <h1 class="font-display text-2xl md:text-3xl font-bold text-brand-900 mb-4">Un "Diamante en Bruto" listo para el mercado internacional</h1>
+      <p class="text-sm text-[#6B5A7A] leading-relaxed mb-4">
+        ROA TOURS tiene un servicio con alma y color. Sin embargo, a nivel digital y operativo necesita dar el salto definitivo de "negocio local" a <span class="font-semibold text-brand-900">"marca de clase mundial"</span>. Para lograr que el sello de Roa sea el referente del turista extranjero y nacional, no basta con vender tours; hay que vender una <span class="font-semibold text-brand-900">experiencia estandarizada, escalable y altamente profesional</span>.
+      </p>
+      <p class="text-sm text-[#6B5A7A] leading-relaxed">
+        A continuación, presento la Propuesta Integral de Fortalecimiento Institucional y Comercial diseñada específicamente para posicionar su marca en la cúspide del sector en Cartagena.
+      </p>
+    </section>
+
+    <!-- Resumen del acompañamiento -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 py-6 mb-6 border-y border-slate-200 doc-section">
+      <div class="text-center">
+        <p class="text-[11px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-1">Inversión mensual (Plan de Consolidación y Liderazgo)</p>
+        <p class="font-display text-xl font-bold text-brand-900">$4.000.000 COP / mes</p>
+      </div>
+      <div class="text-center sm:border-l border-slate-200">
+        <p class="text-[11px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-1">Duración del acompañamiento</p>
+        <p class="font-display text-xl font-bold text-brand-900">6 meses</p>
+      </div>
+    </section>
+
+    <!-- 1. Identidad Corporativa: El "Sello de Roa" -->
+    <section class="mb-10 doc-section">
+      <h2 class="flex items-center gap-3 font-display text-xl font-bold text-brand-900 mb-4">
+        <span class="w-8 h-8 rounded-md bg-brand-700 text-white flex items-center justify-center text-sm shrink-0">1</span>
+        Identidad Corporativa: El "Sello de Roa"
+      </h2>
+      <p class="text-sm text-[#6B5A7A] leading-relaxed mb-4 pl-0 sm:pl-11">
+        Para ser recordados y recomendados, la imagen debe ser impecable y coherente desde el primer contacto por WhatsApp hasta la despedida en el muelle.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pl-0 sm:pl-11">
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-brand-900 text-sm mb-1.5">Historia y Narrativa</h3>
+          <p class="text-[#6B5A7A] text-sm leading-relaxed">Creación del <em>Storytelling</em> corporativo. Narrativa que conecte el origen de la empresa con la pasión genuina por mostrar la verdadera Colombia.</p>
+        </div>
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-brand-900 text-sm mb-1.5">Misión</h3>
+          <p class="text-[#6B5A7A] text-sm leading-relaxed">Brindar experiencias culturales y recreativas de alta calidad, conectando a visitantes con la esencia colombiana a través de guianza experta y servicio excepcional.</p>
+        </div>
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-brand-900 text-sm mb-1.5">Visión 2030</h3>
+          <p class="text-[#6B5A7A] text-sm leading-relaxed">Ser la operadora de Tours líder en Latinoamérica, reconocida por su estándar "Sello Roa" y presencia en las principales capitales del continente.</p>
+        </div>
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-brand-900 text-sm mb-1.5">Valores Pilar</h3>
+          <p class="text-[#6B5A7A] text-sm leading-relaxed">Hospitalidad Colombiana, Seguridad Naval/Terrestre, Conocimiento Cultural y Agilidad Comercial.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Plan de Mejoras Estratégicas (Listado Maestro) -->
+    <section class="mb-10 doc-section">
+      <h2 class="flex items-center gap-3 font-display text-xl font-bold text-brand-900 mb-4">
+        <span class="w-8 h-8 rounded-md bg-brand-700 text-white flex items-center justify-center text-sm shrink-0">2</span>
+        Plan de Mejoras Estratégicas (Listado Maestro)
+      </h2>
+      <div class="pl-0 sm:pl-11 space-y-6">
+        <div>
+          <h3 class="font-display text-base font-bold text-brand-900 mb-2">A. Área de Operaciones y Procesos</h3>
+          <ul class="text-[#6B5A7A] text-sm leading-relaxed space-y-2 list-disc list-inside">
+            <li><span class="font-semibold text-brand-900">Manual Operativo de Experiencia:</span> Documento que dicta desde cómo recibe el guía al turista hasta el protocolo de despedida.</li>
+            <li><span class="font-semibold text-brand-900">Sistema de Gestión WhatsApp Business:</span> Catálogos, respuestas rápidas, etiquetas de seguimiento y CRM básico para que ningún mensaje se pierda.</li>
+            <li><span class="font-semibold text-brand-900">Estandarización de Productos:</span> Protocolo de tiempos y paradas exactas para tours AM, PM, Islas y Bahía.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-display text-base font-bold text-brand-900 mb-2">B. Talento Humano y Estructura</h3>
+          <ul class="text-[#6B5A7A] text-sm leading-relaxed space-y-2 list-disc list-inside">
+            <li><span class="font-semibold text-brand-900">Estructura Organizacional:</span> Organigrama claro (Gerencia, Operaciones, Comercial, Administrativo) y Manual de Funciones para evitar duplicidad de tareas.</li>
+            <li><span class="font-semibold text-brand-900">Programa de Semilleros (Pasantes):</span> Alianzas con universidades para captar jóvenes talentos en turismo y comunicación.</li>
+            <li><span class="font-semibold text-brand-900">Plan de Capacitación:</span> Entrenamiento continuo en servicio al cliente, manejo de crisis y técnicas de ventas persuasivas.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-display text-base font-bold text-brand-900 mb-2">C. Imagen, Redes y Estética Visual</h3>
+          <ul class="text-[#6B5A7A] text-sm leading-relaxed space-y-2 list-disc list-inside">
+            <li><span class="font-semibold text-brand-900">Rediseño de Identidad Visual:</span> Unificar la paleta de colores en redes. Elevar el contenido orgánico hacia un "brillo" de lujo y profesionalismo internacional.</li>
+            <li><span class="font-semibold text-brand-900">Estrategia de Contenido:</span> Menos ventas directas frías y más testimonios documentados de extranjeros felices usando el "Sello Roa".</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Detalle de Impacto Directo por Área -->
+    <section class="mb-10 doc-section">
+      <h2 class="flex items-center gap-3 font-display text-xl font-bold text-brand-900 mb-4">
+        <span class="w-8 h-8 rounded-md bg-brand-700 text-white flex items-center justify-center text-sm shrink-0">3</span>
+        Detalle de Impacto Directo por Área
+      </h2>
+      <div class="doc-table-wrap pl-0 sm:pl-11">
+        <table class="doc-table w-full table-fixed text-sm border border-slate-200 border-collapse">
+          <thead>
+            <tr class="bg-brand-900 text-white text-left">
+              <th class="p-3 font-bold text-xs uppercase tracking-wider break-words">Área a Mejorar</th>
+              <th class="p-3 font-bold text-xs uppercase tracking-wider break-words">Acción Clave</th>
+              <th class="p-3 font-bold text-xs uppercase tracking-wider break-words">Impacto y Beneficio hacia la Meta</th>
+            </tr>
+          </thead>
+          <tbody class="text-[#6B5A7A]">
+            <tr class="border-t border-slate-200">
+              <td class="p-3 align-top font-semibold text-brand-900 break-words">Atención WhatsApp</td>
+              <td class="p-3 align-top break-words">Estandarización de scripts y tiempos de respuesta.</td>
+              <td class="p-3 align-top break-words"><span class="font-semibold text-brand-900">Conversión:</span> Al responder rápido y profesional, el extranjero siente confianza inmediata de depositar su dinero.</td>
+            </tr>
+            <tr class="border-t border-slate-200 bg-slate-50">
+              <td class="p-3 align-top font-semibold text-brand-900 break-words">Estructura Organizacional</td>
+              <td class="p-3 align-top break-words">Definición de puestos y jerarquías.</td>
+              <td class="p-3 align-top break-words"><span class="font-semibold text-brand-900">Escalabilidad:</span> Permite abrir sedes en otras ciudades porque el modelo ya está escrito y no depende solo del dueño.</td>
+            </tr>
+            <tr class="border-t border-slate-200">
+              <td class="p-3 align-top font-semibold text-brand-900 break-words">Manual Operativo</td>
+              <td class="p-3 align-top break-words">Protocolos de guianza y seguridad.</td>
+              <td class="p-3 align-top break-words"><span class="font-semibold text-brand-900">Calidad Constante:</span> Sin importar quién sea el guía, el turista recibe la misma calidad. Genera publicidad boca a boca.</td>
+            </tr>
+            <tr class="border-t border-slate-200 bg-slate-50">
+              <td class="p-3 align-top font-semibold text-brand-900 break-words">Imagen y Redes</td>
+              <td class="p-3 align-top break-words">Curaduría visual y estética premium.</td>
+              <td class="p-3 align-top break-words"><span class="font-semibold text-brand-900">Posicionamiento:</span> El turista compra "por los ojos". Una estética alta justifica los precios y atrae al público objetivo.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 4. Proyección de Rentabilidad -->
+    <section class="mb-10 doc-section">
+      <h2 class="flex items-center gap-3 font-display text-xl font-bold text-brand-900 mb-4">
+        <span class="w-8 h-8 rounded-md bg-brand-700 text-white flex items-center justify-center text-sm shrink-0">4</span>
+        Proyección de Rentabilidad: ¿Cómo se Traduce Esto en Más Ingresos?
+      </h2>
+      <p class="text-sm text-[#6B5A7A] leading-relaxed mb-4 pl-0 sm:pl-11">
+        El objetivo de esta propuesta no es generar un gasto, sino una <span class="font-semibold text-brand-900">inversión con retorno directo</span>. Al implementar estos manuales, procesos y la digitalización integral, ROA TOURS experimentará un crecimiento financiero apalancado en tres frentes:
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pl-0 sm:pl-11">
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-brand-900 text-sm mb-1.5">Aumento de Ventas 24/7</h3>
+          <p class="text-[#6B5A7A] text-sm leading-relaxed">Al pasar de procesos manuales a una estructura digital organizada, se captan turistas extranjeros sin importar la diferencia horaria. Las ventas pueden fluir de forma continua mientras el equipo atiende la operatividad local.</p>
+        </div>
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-brand-900 text-sm mb-1.5">Precios Premium (Upselling)</h3>
+          <p class="text-[#6B5A7A] text-sm leading-relaxed">Cuando la percepción de la marca es impecable (redes cuidadas, atención rápida y guías estandarizados), el cliente no regatea. Esto le permite a ROA TOURS elevar sus tarifas de manera justificada y vender servicios adicionales.</p>
+        </div>
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-brand-900 text-sm mb-1.5">Reducción de Costos Operativos</h3>
+          <p class="text-[#6B5A7A] text-sm leading-relaxed">Tener manuales de funciones y automatización reduce los errores humanos que obligan a hacer reembolsos. Además, el programa de semilleros universitarios optimiza el costo de nómina al incorporar talento joven y proactivo a bajo costo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ¿Por qué soy la aliada estratégica ideal? -->
+    <section class="mb-10 doc-section">
+      <h2 class="flex items-center gap-3 font-display text-xl font-bold text-brand-900 mb-4">
+        <span class="w-8 h-8 rounded-md bg-brand-700 text-white flex items-center justify-center text-sm shrink-0">5</span>
+        ¿Por Qué Soy la Aliada Estratégica Ideal?
+      </h2>
+      <p class="text-sm text-[#6B5A7A] leading-relaxed mb-4 pl-0 sm:pl-11">
+        Mi perfil como Gerente y Administradora es el motor perfecto para ejecutar esta visión por 3 razones estructurales:
+      </p>
+      <ul class="text-[#6B5A7A] text-sm leading-relaxed space-y-3 pl-0 sm:pl-11 list-disc list-inside">
+        <li><span class="font-semibold text-brand-900">Experiencia Directa en Turismo Local:</span> He liderado la gerencia general de importantes operadoras turísticas en Cartagena, lo que me otorga un conocimiento profundo y real del mercado, la logística portuaria y el trato exigente del turista internacional.</li>
+        <li><span class="font-semibold text-brand-900">Gestión Experta de Talento (RRHH):</span> Amplia trayectoria a nivel corporativo en administración de nóminas, auditorías integrales, creación de manuales operativos y capacitación constante de personal. Habilidades esenciales para construir un organigrama sólido.</li>
+        <li><span class="font-semibold text-brand-900">Visión de Marca Integral:</span> Mi formación universitaria dual (Comunicación y Administración) me permite asegurar que la rentabilidad financiera cuadre perfectamente, mientras garantizo que la estética y el mensaje de la marca brillen.</li>
+      </ul>
+    </section>
+
+    <!-- 6. Planes de Consultoría y Acompañamiento Empresarial -->
+    <section class="mb-10 doc-section">
+      <h2 class="flex items-center gap-3 font-display text-xl font-bold text-brand-900 mb-4">
+        <span class="w-8 h-8 rounded-md bg-brand-700 text-white flex items-center justify-center text-sm shrink-0">6</span>
+        Planes de Consultoría y Acompañamiento Empresarial
+      </h2>
+      <div class="doc-table-wrap pl-0 sm:pl-11">
+        <table class="doc-table w-full table-fixed text-sm border border-slate-200 border-collapse">
+          <thead>
+            <tr class="bg-brand-900 text-white text-left">
+              <th class="p-3 font-bold text-xs uppercase tracking-wider break-words">Modalidad de Acompañamiento</th>
+              <th class="p-3 font-bold text-xs uppercase tracking-wider text-right break-words">Inversión</th>
+            </tr>
+          </thead>
+          <tbody class="text-[#6B5A7A]">
+            <tr class="border-t border-slate-200">
+              <td class="p-3 align-top break-words">
+                <p class="font-bold text-brand-900 mb-1">Plan 1: Diagnóstico y Documentación (1 Mes)</p>
+                <p>Creación de todos los manuales operativos, de funciones y guías por escrito. Se entrega "el mapa estratégico" listo para que ustedes mismos lo ejecuten.</p>
+              </td>
+              <td class="p-3 align-top text-right break-words">
+                <p class="font-display font-bold text-brand-900">$5.000.000</p>
+                <p class="text-xs">(Pago único)</p>
+              </td>
+            </tr>
+            <tr class="border-t border-slate-200 bg-slate-50">
+              <td class="p-3 align-top break-words">
+                <p class="font-bold text-brand-900 mb-1">Plan 2: Implementación y Capacitación (3 Meses)</p>
+                <p>Además de entregar los manuales, lidero la implementación, capacito directamente a los guías, organizo el equipo y estandarizo la atención al cliente.</p>
+              </td>
+              <td class="p-3 align-top text-right break-words">
+                <p class="font-display font-bold text-brand-900">$4.500.000</p>
+                <p class="text-xs">(Mensuales)</p>
+              </td>
+            </tr>
+            <tr class="border-t border-slate-200">
+              <td class="p-3 align-top break-words">
+                <p class="font-bold text-brand-900 mb-1">Plan 3: Consolidación y Liderazgo (6 Meses)</p>
+                <p>El plan maestro integral. Acompañamiento profundo hasta cumplir objetivos de rentabilidad, dejando la marca totalmente posicionada, el equipo entrenado y los procesos en piloto automático.</p>
+              </td>
+              <td class="p-3 align-top text-right break-words">
+                <p class="font-display font-bold text-brand-900">$4.000.000</p>
+                <p class="text-xs">(Mensuales)</p>
+              </td>
+            </tr>
+            <tr class="border-t border-slate-200">
+              <td colspan="2" class="p-3 text-xs italic text-center">* Pagos de consultoría: 50% de anticipo al inicio de cada mes, y 50% al finalizar el respectivo mes de gestión.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 7. Herramientas de Digitalización (Desarrollo Web) -->
+    <section class="mb-4 doc-section">
+      <h2 class="flex items-center gap-3 font-display text-xl font-bold text-brand-900 mb-4">
+        <span class="w-8 h-8 rounded-md bg-brand-700 text-white flex items-center justify-center text-sm shrink-0">7</span>
+        Herramientas de Digitalización (Desarrollo Web)
+      </h2>
+      <p class="text-sm text-[#6B5A7A] leading-relaxed mb-4 pl-0 sm:pl-11">
+        Para sostener el crecimiento de ventas y el estándar internacional propuesto en la consultoría, la empresa debe digitalizar sus catálogos PDF. Como un servicio complementario, ofrezco la estructuración de su página web oficial a la medida, disponible en dos modalidades según su visión de crecimiento:
+      </p>
+      <div class="doc-table-wrap pl-0 sm:pl-11">
+        <table class="doc-table w-full table-fixed text-sm border border-slate-200 border-collapse">
+          <thead>
+            <tr class="bg-brand-900 text-white text-left">
+              <th class="p-3 font-bold text-xs uppercase tracking-wider break-words">Opción Tecnológica a Elegir</th>
+              <th class="p-3 font-bold text-xs uppercase tracking-wider text-right break-words">Inversión Web</th>
+            </tr>
+          </thead>
+          <tbody class="text-[#6B5A7A]">
+            <tr class="border-t border-slate-200">
+              <td class="p-3 align-top break-words">
+                <p class="font-bold text-brand-900 mb-1">Opción 1: Web Catálogo Informativo (Básico)</p>
+                <p>Diseño web completo extraído de sus textos. Los clientes verán la oferta de tours con un diseño premium, pero los botones de reserva los redirigirán a su WhatsApp para un cierre manual.</p>
+              </td>
+              <td class="p-3 align-top text-right break-words">
+                <p class="font-display font-bold text-brand-900">$1.500.000</p>
+                <p class="text-xs">(Pago Único)</p>
+              </td>
+            </tr>
+            <tr class="border-t border-slate-200 bg-slate-50">
+              <td class="p-3 align-top break-words">
+                <p class="font-bold text-[#C9A227] mb-1">Opción 2: Web Reservas &amp; E-commerce (Automatizada)</p>
+                <p><span class="font-semibold text-brand-900">La herramienta definitiva para escalar:</span> Integración de software de reservas con calendarios en tiempo real para evitar cruces o <em>overbooking</em>.</p>
+                <p class="mt-1">- <span class="font-semibold text-brand-900">Pagos directos en la web:</span> El turista podrá pagar con tarjeta de crédito desde cualquier país de forma autónoma.</p>
+              </td>
+              <td class="p-3 align-top text-right break-words">
+                <p class="font-display font-bold text-[#C9A227]">$4.500.000</p>
+                <p class="text-xs">(Pago Único)</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Pie del documento -->
+    <footer class="pt-8 mt-6 border-t-2 border-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-[#6B5A7A]">
+      <div class="flex items-center gap-2.5">
+        <img src="../../images/ncs-logo.jpg" alt="NCS" class="w-7 h-7 rounded object-cover" />
+        <span>Nohemí Carrillo S. — Consultoría en Gestión Turística y Empresarial</span>
+      </div>
+      <span>Documento generado electrónicamente · Cartagena, Colombia</span>
+    </footer>
+  </main>
+
+</body>
+</html>

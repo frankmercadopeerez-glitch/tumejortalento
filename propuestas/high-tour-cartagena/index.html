@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Propuesta · High Tour Cartagena — NCS Consultoría</title>
+  <link rel="icon" href="../../images/ncs-logo.jpg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ["Space Grotesk", "Inter", "sans-serif"],
+            sans: ["Inter", "sans-serif"],
+          },
+          colors: {
+            brand: {
+              50: "#f7f4fa",
+              100: "#ece4f2",
+              200: "#d6c5e3",
+              300: "#bb9fd0",
+              400: "#9b76b8",
+              500: "#7d54a0",
+              600: "#623f85",
+              700: "#4a2f68",
+              800: "#34204A",
+              900: "#1F1330",
+            },
+            accent: "#5B3A82",
+            gold: "#C9A227",
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body { font-family: "Inter", sans-serif; }
+    h1, h2, h3, h4 { font-family: "Space Grotesk", "Inter", sans-serif; }
+
+    .doc-section { break-inside: avoid; }
+    .doc-card { break-inside: avoid; }
+
+    @media print {
+      @page { size: A4; margin: 14mm 12mm; }
+      body { background: #ffffff !important; }
+      .no-print { display: none !important; }
+      .doc-page { box-shadow: none !important; border: none !important; max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
+      .doc-section { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body class="bg-slate-200">
+
+  <!-- Barra flotante (no se imprime) -->
+  <div class="no-print fixed top-0 inset-x-0 z-50 bg-brand-900 text-white py-3 px-4 sm:px-5 flex items-center justify-between gap-3 shadow-lg">
+    <div class="flex items-center gap-2.5 min-w-0">
+      <a href="../index.html" class="shrink-0 text-white/70 hover:text-white transition" aria-label="Volver a Propuestas">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+      </a>
+      <img src="../../images/ncs-logo.jpg" alt="NCS" class="w-8 h-8 rounded object-cover shrink-0" />
+      <span class="text-sm font-semibold tracking-wide truncate">Propuesta — High Tour Cartagena</span>
+    </div>
+    <button
+      onclick="window.print()"
+      class="shrink-0 inline-flex items-center gap-2 bg-[#C9A227] text-brand-900 font-bold text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-md hover:brightness-95 transition whitespace-nowrap"
+    >
+      <span class="hidden sm:inline">Imprimir / Guardar como PDF</span>
+      <span class="sm:hidden">Imprimir / PDF</span>
+    </button>
+  </div>
+
+  <!-- Documento -->
+  <main class="doc-page max-w-3xl mx-auto bg-white shadow-xl my-24 print:my-0 px-8 py-10 md:px-14 md:py-14 text-[#2C1B3D]">
+
+    <!-- Encabezado del documento -->
+    <header class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 pb-8 border-b-2 border-brand-800">
+      <div class="flex items-start gap-4">
+        <img src="../../images/ncs-logo.jpg" alt="NCS - Nohemí Carrillo S." class="w-16 h-16 rounded-lg object-cover shadow shrink-0" />
+        <div>
+          <h2 class="font-display text-xl font-bold text-brand-900 mb-0.5">Nohemí Carrillo S.</h2>
+          <p class="text-[11px] uppercase tracking-[0.18em] text-[#C9A227] font-bold mb-1.5">Consultoría en Gestión Turística y Empresarial</p>
+          <div class="text-xs text-[#6B5A7A] space-y-0.5 leading-relaxed">
+            <p>Lcda. Ciencias de la Comunicación &amp; Adm. de Empresas</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-left md:text-right min-w-0 md:max-w-[55%]">
+        <p class="text-[11px] uppercase tracking-[0.3em] text-[#C9A227] font-bold mb-1">Propuesta Integral de Fortalecimiento y Escalamiento</p>
+        <h1 class="font-display text-2xl md:text-3xl font-bold text-brand-900 mb-1">High Tour Cartagena</h1>
+        <p class="text-xs text-[#6B5A7A]">Fecha: 09 de Junio, 2026</p>
+      </div>
+    </header>
+
+    <!-- Resumen del proyecto -->
+    <section class="grid grid-cols-1 sm:grid-cols-3 gap-4 py-6 mb-6 border-y border-slate-200 doc-section">
+      <div class="text-center">
+        <p class="text-[11px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-1">Duración del acompañamiento</p>
+        <p class="font-display text-xl font-bold text-brand-900">6 meses</p>
+      </div>
+      <div class="text-center sm:border-x border-slate-200">
+        <p class="text-[11px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-1">Inversión mensual</p>
+        <p class="font-display text-xl font-bold text-brand-900">$1.500.000 COP</p>
+      </div>
+      <div class="text-center">
+        <p class="text-[11px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-1">Ganancia compartida</p>
+        <p class="font-display text-xl font-bold text-brand-900">40% sobre cierres de Meta / TikTok</p>
+      </div>
+    </section>
+
+    <!-- 1. Filosofía Corporativa -->
+    <section class="mb-10 doc-section">
+      <h2 class="flex items-center gap-3 font-display text-xl font-bold text-brand-900 mb-4">
+        <span class="w-8 h-8 rounded-md bg-brand-700 text-white flex items-center justify-center text-sm shrink-0">1</span>
+        Filosofía Corporativa
+      </h2>
+      <p class="text-[11px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-3 pl-11">(A personalizar con Noris)</p>
+      <p class="text-sm text-[#6B5A7A] leading-relaxed mb-4 pl-11">
+        Story telling, filosofía organizacional y estructura.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pl-0 sm:pl-11">
+        <div class="doc-card p-4 rounded-md border border-dashed border-slate-300 bg-slate-50">
+          <p class="text-[11px] font-bold uppercase tracking-wider text-brand-700 mb-1">Misión</p>
+          <p class="text-[#6B5A7A] text-sm italic">Espacio en blanco para definir con Noris.</p>
+        </div>
+        <div class="doc-card p-4 rounded-md border border-dashed border-slate-300 bg-slate-50">
+          <p class="text-[11px] font-bold uppercase tracking-wider text-brand-700 mb-1">Visión</p>
+          <p class="text-[#6B5A7A] text-sm italic">Espacio en blanco para definir con Noris.</p>
+        </div>
+        <div class="doc-card p-4 rounded-md border border-dashed border-slate-300 bg-slate-50">
+          <p class="text-[11px] font-bold uppercase tracking-wider text-brand-700 mb-1">Objetivo</p>
+          <p class="text-[#6B5A7A] text-sm italic">Espacio en blanco para definir con Noris.</p>
+        </div>
+        <div class="doc-card p-4 rounded-md border border-slate-200 bg-white">
+          <p class="text-[11px] font-bold uppercase tracking-wider text-brand-700 mb-1">Valores Pilar</p>
+          <p class="text-[#2C1B3D] text-sm">Hospitalidad Colombiana, Seguridad, Conocimiento Cultural y Agilidad Comercial.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Soporte Administrativo y Financiero -->
+    <section class="mb-10 doc-section">
+      <h2 class="flex items-center gap-3 font-display text-xl font-bold text-brand-900 mb-4">
+        <span class="w-8 h-8 rounded-md bg-brand-700 text-white flex items-center justify-center text-sm shrink-0">2</span>
+        Soporte Administrativo y Financiero
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pl-0 sm:pl-11">
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-brand-900 text-sm mb-1.5">Control Diario</h3>
+          <p class="text-[#6B5A7A] text-sm leading-relaxed">Implementación de sistemas para monitorear ingresos/egresos y control de gastos fijos para una salud financiera clara.</p>
+        </div>
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-brand-900 text-sm mb-1.5">Análisis de Rentabilidad</h3>
+          <p class="text-[#6B5A7A] text-sm leading-relaxed">Auditoría constante de márgenes para asegurar la optimización de las ganancias diarias.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Gestión de Talento Humano y Sentido de Pertenencia -->
+    <section class="mb-10 doc-section">
+      <h2 class="flex items-center gap-3 font-display text-xl font-bold text-brand-900 mb-4">
+        <span class="w-8 h-8 rounded-md bg-brand-700 text-white flex items-center justify-center text-sm shrink-0">3</span>
+        Gestión de Talento Humano y Sentido de Pertenencia
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pl-0 sm:pl-11">
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-brand-900 text-sm mb-1.5">Capacitación Integral</h3>
+          <p class="text-[#6B5A7A] text-sm leading-relaxed">Entrenamiento alineado con la Misión, Visión y Objetivos, fortaleciendo la cultura organizacional.</p>
+        </div>
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-brand-900 text-sm mb-1.5">Protocolos de Selección</h3>
+          <p class="text-[#6B5A7A] text-sm leading-relaxed">Asesoría en contratación estratégica (evaluación de perfiles y habilidades blandas) para garantizar equipos de alto rendimiento.</p>
+        </div>
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-brand-900 text-sm mb-1.5">Pasantes y Formación</h3>
+          <p class="text-[#6B5A7A] text-sm leading-relaxed">Desarrollo de programas de pasantías, capacitación y formación continua para construir cantera de talento propio.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Estructura Operativa y Comercial -->
+    <section class="mb-10 doc-section">
+      <h2 class="flex items-center gap-3 font-display text-xl font-bold text-brand-900 mb-4">
+        <span class="w-8 h-8 rounded-md bg-brand-700 text-white flex items-center justify-center text-sm shrink-0">4</span>
+        Estructura Operativa y Comercial
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pl-0 sm:pl-11">
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-brand-900 text-sm mb-1.5">Manual Interno de Ventas</h3>
+          <p class="text-[#6B5A7A] text-sm leading-relaxed">Estandarización del ciclo de venta, pasos con proveedores, seguimiento post-venta y plantillas para clientes.</p>
+        </div>
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-brand-900 text-sm mb-1.5">Automatización</h3>
+          <p class="text-[#6B5A7A] text-sm leading-relaxed">Estandarización de respuestas y configuración de IA en WhatsApp Business para maximizar la conversión.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Imagen, Identidad y Estrategia Digital Avanzada -->
+    <section class="mb-10 doc-section">
+      <h2 class="flex items-center gap-3 font-display text-xl font-bold text-brand-900 mb-4">
+        <span class="w-8 h-8 rounded-md bg-brand-700 text-white flex items-center justify-center text-sm shrink-0">5</span>
+        Imagen, Identidad y Estrategia Digital Avanzada
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pl-0 sm:pl-11">
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-brand-900 text-sm mb-1.5">Consultoría de Imagen</h3>
+          <p class="text-[#6B5A7A] text-sm leading-relaxed">Creación de una estética "soberbia" y premium que posicione a High Tour como referente de lujo.</p>
+        </div>
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-brand-900 text-sm mb-1.5">Ecosistema Digital</h3>
+          <ul class="text-[#6B5A7A] text-sm space-y-1 list-disc list-inside">
+            <li>Apertura y configuración de cuenta en TikTok.</li>
+            <li>Fusión y sincronización estratégica de Facebook e Instagram bajo el ecosistema de Meta.</li>
+            <li>Capacitación en técnicas de posicionamiento orgánico para maximizar el alcance sin costo publicitario constante.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Modelo de Inversión y Proyección de Rentabilidad -->
+    <section class="mb-10 doc-section">
+      <h2 class="flex items-center gap-3 font-display text-xl font-bold text-brand-900 mb-4">
+        <span class="w-8 h-8 rounded-md bg-brand-700 text-white flex items-center justify-center text-sm shrink-0">6</span>
+        Modelo de Inversión y Proyección de Rentabilidad
+      </h2>
+      <p class="text-sm text-[#6B5A7A] leading-relaxed mb-4 pl-0 sm:pl-11 max-w-2xl">
+        Para sostener la gestión profesional y el crecimiento exponencial, establecemos el siguiente modelo de inversión:
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pl-0 sm:pl-11">
+        <div class="doc-card p-4 rounded-md bg-brand-900 text-white">
+          <h3 class="font-bold text-sm mb-1.5">Inversión Mensual de Consultoría</h3>
+          <p class="font-display text-lg font-bold text-[#C9A227] mb-1.5">$1.500.000 COP</p>
+          <p class="text-white/75 text-sm leading-relaxed">(Por gestión de redes, creación de contenido, soporte administrativo y comercial).</p>
+        </div>
+        <div class="doc-card p-4 rounded-md bg-brand-900 text-white">
+          <h3 class="font-bold text-sm mb-1.5">Modelo de Ganancia Compartida</h3>
+          <p class="font-display text-lg font-bold text-[#C9A227] mb-1.5">40%</p>
+          <p class="text-white/75 text-sm leading-relaxed">El enfoque de esta estrategia está centrado en resultados. Sobre los leads calificados que provengan directamente de las campañas de Meta y el contenido de TikTok, se establece una participación del 40% de ganancia sobre dichos cierres de venta.</p>
+        </div>
+        <div class="doc-card p-4 rounded-md bg-brand-900 text-white">
+          <h3 class="font-bold text-sm mb-1.5">Compensación Estratégica</h3>
+          <p class="text-white/75 text-sm leading-relaxed">Este modelo asegura que la creación de contenido y el manejo de redes no sean un gasto, sino una fuente directa de ingresos que se autosustenta y eleva la rentabilidad de la agencia al convertir seguidores en clientes de alto valor.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. ¿Por qué soy la aliada estratégica ideal? -->
+    <section class="mb-4 doc-section">
+      <h2 class="flex items-center gap-3 font-display text-xl font-bold text-brand-900 mb-4">
+        <span class="w-8 h-8 rounded-md bg-brand-700 text-white flex items-center justify-center text-sm shrink-0">7</span>
+        ¿Por Qué Soy la Aliada Estratégica Ideal?
+      </h2>
+      <div class="pl-0 sm:pl-11 p-5 rounded-md border-l-4 border-[#C9A227] bg-slate-50">
+        <p class="text-[#2C1B3D] text-sm leading-relaxed">
+          Mi perfil integra la disciplina administrativa necesaria para el control de recursos con la visión estética y comunicativa requerida para destacar en redes sociales. Cuento con la experiencia en selección de personal, auditoría y marketing digital para asegurar que cada área de High Tour Cartagena funcione como un engranaje perfecto hacia el éxito financiero.
+        </p>
+        <p class="text-right text-sm font-display font-bold text-brand-900 mt-3">— Nohemí Carrillo S.</p>
+      </div>
+    </section>
+
+    <!-- Pie del documento -->
+    <footer class="pt-8 mt-6 border-t-2 border-brand-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-[#6B5A7A]">
+      <div class="flex items-center gap-2.5">
+        <img src="../../images/ncs-logo.jpg" alt="NCS" class="w-7 h-7 rounded object-cover" />
+        <span>Nohemí Carrillo S. — Consultoría en Gestión Turística y Empresarial</span>
+      </div>
+      <span>Cel: 316 303 0589 - Whats 6625260341 · nohemicarrillosanchez@gmail.com · Cartagena, Colombia</span>
+    </footer>
+  </main>
+
+</body>
+</html>

@@ -284,7 +284,7 @@ const ARTICLES = {
             <h2 class="font-display text-2xl font-bold text-brand-900 mb-4 leading-tight">Como Preparar tu Hoja de Vida para el Sector Hotelero de Cartagena: Guia Practica</h2>
             <div class="flex flex-wrap gap-3 text-xs text-slate-400 mb-6"><span>Enero 2025</span><span>·</span><span>6 min</span></div>
             <div class="text-slate-600 text-sm leading-relaxed space-y-4">
-                <p>Cada semana recibimos decenas de hojas de vida en Tu Mejor Talento Humano. Despues de anos de trabajo en seleccion para el sector hotelero de Cartagena, hemos identificado los errores mas comunes que hacen que un candidato sea descartado — y como corregirlos.</p>
+                <p>Cada semana recibimos decenas de hojas de vida en NCS. Despues de anos de trabajo en seleccion para el sector hotelero de Cartagena, hemos identificado los errores mas comunes que hacen que un candidato sea descartado — y como corregirlos.</p>
                 <h3 class="font-bold text-brand-900 text-base mt-4 mb-2">1. Sé especifico en tu experiencia</h3>
                 <p>No basta con escribir "Cocinero en Hotel XYZ". El reclutador quiere saber: cuantas habitaciones tenia el hotel, cuantas personas atendias por turno, que tipo de cocina manejabas. La especificidad genera confianza.</p>
                 <h3 class="font-bold text-brand-900 text-base mt-4 mb-2">2. Certifica tus idiomas</h3>
@@ -317,7 +317,7 @@ const ARTICLES = {
             <h2 class="font-display text-2xl font-bold text-brand-900 mb-4 leading-tight">El Ingles como Ventaja Diferencial: Cuanto Mas Gana Quien es Bilingue en Turismo en Cartagena</h2>
             <div class="flex flex-wrap gap-3 text-xs text-slate-400 mb-6"><span>Noviembre 2024</span><span>·</span><span>4 min</span></div>
             <div class="text-slate-600 text-sm leading-relaxed space-y-4">
-                <p>Un analisis interno de las vacantes gestionadas por Tu Mejor Talento Humano durante 2024 revela que los candidatos con certificacion B2 o superior en ingles acceden a salarios que superan entre un <strong>30% y un 60%</strong> a los de sus pares monolingues en el mismo cargo.</p>
+                <p>Un analisis interno de las vacantes gestionadas por NCS durante 2024 revela que los candidatos con certificacion B2 o superior en ingles acceden a salarios que superan entre un <strong>30% y un 60%</strong> a los de sus pares monolingues en el mismo cargo.</p>
                 <p>Un recepcionista hotelero sin ingles: entre $1.400.000 y $1.600.000 mensuales. El mismo perfil con ingles C1: entre $2.000.000 y $2.400.000, mas prima de idioma en varios establecimientos.</p>
                 <p>Un mesero sin idioma: $1.300.000 - $1.500.000 + propinas en pesos. Con ingles B2: $1.600.000 - $1.800.000 + propinas en dolares de turistas internacionales, lo que puede representar un ingreso real mensual superior a $2.500.000.</p>
                 <p>La brecha es incluso mayor en cargos de coordinacion y gerencia, donde el ingles avanzado es un requisito no negociable para grupos hoteleros con estandares internacionales.</p>
