@@ -375,13 +375,8 @@ let currentCat = "all";
 // ═══════════════════════════════════════════════
 function renderVacantes() {
   const container = document.getElementById("vacantes-container");
-  const homeContainer = document.getElementById("vacantes-home");
   if (container)
     container.innerHTML = VACANTES.map((v) => createCard(v)).join("");
-  if (homeContainer)
-    homeContainer.innerHTML = VACANTES.slice(0, 4)
-      .map((v) => createCard(v))
-      .join("");
   updateJobCount();
   lucide.createIcons();
 }
