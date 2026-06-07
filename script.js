@@ -9,7 +9,7 @@ const VACANTES = [
     location: "Hotel de Lujo - Bocagrande",
     salary: "$ 2.000.000 + Propinas",
     type: "Turnos Rotativos",
-    img: "https://images.unsplash.com/photo-cQbOSRpElxw?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=500&q=60",
     desc: "Pasion por la gastronomia caribena e internacional. Responsable de la preparacion de platos fuertes y manejo de parrilla.",
     reqs: [
       "Minimo 3 anos de experiencia.",
@@ -29,7 +29,7 @@ const VACANTES = [
     location: "Restaurante Gourmet - Centro Historico",
     salary: "$ 1.900.000 + Propinas",
     type: "Tiempo Completo",
-    img: "https://images.unsplash.com/photo-5IGprlBT5g4?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=500&q=60",
     desc: "Apoyo en el mise en place y limpieza. Oportunidad de aprendizaje con chefs reconocidos.",
     reqs: [
       "1 ano de experiencia.",
@@ -49,7 +49,7 @@ const VACANTES = [
     location: "Hotel Radisson Cartagena - Bocagrande",
     salary: "$ 1.950.000 + Prestaciones",
     type: "Diurno",
-    img: "https://images.unsplash.com/photo-dp78aU81-9o?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=500&q=60",
     desc: "Mantenimiento preventivo locativo (pintura, drywall, plomeria basica). Reporte de novedades al jefe de mantenimiento.",
     reqs: [
       "Tecnico en mantenimiento.",
@@ -69,7 +69,7 @@ const VACANTES = [
     location: "Hotel Boutique - Getsemani",
     salary: "$ 1.950.000 + Propinas",
     type: "Turnos Noche",
-    img: "https://images.unsplash.com/photo-H9q_XcRpHNo?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=500&q=60",
     desc: "Atencion a huespedes extranjeros y servicio a la mesa con altos estandares internacionales.",
     reqs: [
       "Ingles B2 certificado.",
@@ -89,7 +89,7 @@ const VACANTES = [
     location: "Cadena Hotelera Internacional",
     salary: "$ 1.850.000 + Incentivos",
     type: "Turno Manana",
-    img: "https://images.unsplash.com/photo-BKmJD9WmuA8?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=500&q=60",
     desc: "Limpieza y preparacion de habitaciones segun estandares de calidad internacional. Reporte de novedades.",
     reqs: [
       "6 meses de experiencia.",
@@ -109,7 +109,7 @@ const VACANTES = [
     location: "Hotel Playa Cartagena",
     salary: "$ 2.100.000",
     type: "Rotativo",
-    img: "https://images.unsplash.com/photo-7abDBJ9bylA?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-1606836591695-4d58a73eba1e?auto=format&fit=crop&w=500&q=60",
     desc: "Check-in / check-out, manejo de reservas y atencion integral al huesped nacional e internacional.",
     reqs: [
       "Tecnologo en Hoteleria o Turismo.",
@@ -129,7 +129,7 @@ const VACANTES = [
     location: "Grupo Hotelero - Cartagena",
     salary: "$ 5.500.000",
     type: "Tiempo Completo",
-    img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=500&q=60",
     desc: "Planificacion y control de operaciones del establecimiento. Liderazgo de equipos multidisciplinarios.",
     reqs: [
       "Profesional en Administracion o Hoteleria.",
@@ -149,7 +149,7 @@ const VACANTES = [
     location: "Rooftop Bar Exclusivo - Centro",
     salary: "$ 1.800.000 + Propinas",
     type: "Turno Noche",
-    img: "https://images.unsplash.com/photo-1574096079513-d8259312b785?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=500&q=60",
     desc: "Preparacion de cocteleria de autor y clasica. Atencion en barra con altos estandares.",
     reqs: [
       "2 anos de experiencia en barra.",
@@ -169,7 +169,7 @@ const VACANTES = [
     location: "Agencia Premium - Centro Historico",
     salary: "$ 2.200.000 + Comisiones",
     type: "Freelance / Contrato",
-    img: "https://images.unsplash.com/photo-QLGcuQgsJFo?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?auto=format&fit=crop&w=500&q=60",
     desc: "Acompanamiento a grupos de turistas nacionales e internacionales. Historia, cultura y gastronomia caribena.",
     reqs: [
       "Tarjeta Profesional de Guia.",
@@ -189,7 +189,7 @@ const VACANTES = [
     location: "Hotel 5 Estrellas - Bocagrande",
     salary: "$ 1.900.000 + Propinas",
     type: "Rotativo",
-    img: "https://images.unsplash.com/photo-lngK-Hh9QlI?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-1517840901100-8179e982acb7?auto=format&fit=crop&w=500&q=60",
     desc: "Recepcion, transporte de equipaje y asistencia integral al huesped desde su llegada.",
     reqs: [
       "Experiencia en atencion al cliente.",
@@ -209,7 +209,7 @@ const VACANTES = [
     location: "Centro de Convenciones - Cartagena",
     salary: "$ 3.200.000",
     type: "Tiempo Completo",
-    img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=500&q=60",
     desc: "Coordinacion de congresos, ferias y eventos corporativos. Liaison con proveedores y clientes.",
     reqs: [
       "Profesional en Relaciones Publicas o Administracion.",
@@ -229,7 +229,7 @@ const VACANTES = [
     location: "Empresa de Servicios - Cartagena",
     salary: "$ 1.800.000",
     type: "Tiempo Completo",
-    img: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=500&q=60",
     desc: "Apoyo en procesos de seleccion, archivo documental, nomina y gestion de contratos de personal.",
     reqs: [
       "Tecnologo o Profesional en Administracion.",
