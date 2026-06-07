@@ -9,7 +9,7 @@ const VACANTES = [
     location: "Hotel de Lujo - Bocagrande",
     salary: "$ 2.000.000 + Propinas",
     type: "Turnos Rotativos",
-    img: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-cQbOSRpElxw?auto=format&fit=crop&w=500&q=60",
     desc: "Pasion por la gastronomia caribena e internacional. Responsable de la preparacion de platos fuertes y manejo de parrilla.",
     reqs: [
       "Minimo 3 anos de experiencia.",
@@ -29,7 +29,7 @@ const VACANTES = [
     location: "Restaurante Gourmet - Centro Historico",
     salary: "$ 1.900.000 + Propinas",
     type: "Tiempo Completo",
-    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-5IGprlBT5g4?auto=format&fit=crop&w=500&q=60",
     desc: "Apoyo en el mise en place y limpieza. Oportunidad de aprendizaje con chefs reconocidos.",
     reqs: [
       "1 ano de experiencia.",
@@ -49,7 +49,7 @@ const VACANTES = [
     location: "Hotel Radisson Cartagena - Bocagrande",
     salary: "$ 1.950.000 + Prestaciones",
     type: "Diurno",
-    img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-dp78aU81-9o?auto=format&fit=crop&w=500&q=60",
     desc: "Mantenimiento preventivo locativo (pintura, drywall, plomeria basica). Reporte de novedades al jefe de mantenimiento.",
     reqs: [
       "Tecnico en mantenimiento.",
@@ -69,7 +69,7 @@ const VACANTES = [
     location: "Hotel Boutique - Getsemani",
     salary: "$ 1.950.000 + Propinas",
     type: "Turnos Noche",
-    img: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-H9q_XcRpHNo?auto=format&fit=crop&w=500&q=60",
     desc: "Atencion a huespedes extranjeros y servicio a la mesa con altos estandares internacionales.",
     reqs: [
       "Ingles B2 certificado.",
@@ -89,7 +89,7 @@ const VACANTES = [
     location: "Cadena Hotelera Internacional",
     salary: "$ 1.850.000 + Incentivos",
     type: "Turno Manana",
-    img: "https://images.unsplash.com/photo-1584622050111-993a426fbf0a?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-BKmJD9WmuA8?auto=format&fit=crop&w=500&q=60",
     desc: "Limpieza y preparacion de habitaciones segun estandares de calidad internacional. Reporte de novedades.",
     reqs: [
       "6 meses de experiencia.",
@@ -109,7 +109,7 @@ const VACANTES = [
     location: "Hotel Playa Cartagena",
     salary: "$ 2.100.000",
     type: "Rotativo",
-    img: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-7abDBJ9bylA?auto=format&fit=crop&w=500&q=60",
     desc: "Check-in / check-out, manejo de reservas y atencion integral al huesped nacional e internacional.",
     reqs: [
       "Tecnologo en Hoteleria o Turismo.",
@@ -169,7 +169,7 @@ const VACANTES = [
     location: "Agencia Premium - Centro Historico",
     salary: "$ 2.200.000 + Comisiones",
     type: "Freelance / Contrato",
-    img: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-QLGcuQgsJFo?auto=format&fit=crop&w=500&q=60",
     desc: "Acompanamiento a grupos de turistas nacionales e internacionales. Historia, cultura y gastronomia caribena.",
     reqs: [
       "Tarjeta Profesional de Guia.",
@@ -189,7 +189,7 @@ const VACANTES = [
     location: "Hotel 5 Estrellas - Bocagrande",
     salary: "$ 1.900.000 + Propinas",
     type: "Rotativo",
-    img: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=500&q=60",
+    img: "https://images.unsplash.com/photo-lngK-Hh9QlI?auto=format&fit=crop&w=500&q=60",
     desc: "Recepcion, transporte de equipaje y asistencia integral al huesped desde su llegada.",
     reqs: [
       "Experiencia en atencion al cliente.",

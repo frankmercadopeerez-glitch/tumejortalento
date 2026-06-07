@@ -12,7 +12,7 @@
       Humano
     </title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -32,13 +32,13 @@
                 700: "#4a5a7e",
                 800: "#2d3a52",
                 900: "#1a2332",
-                accent: "#0ea5e9",
+                accent: "#0062ff",
                 gold: "#f59e0b",
               },
             },
             fontFamily: {
               sans: ["Inter", "sans-serif"],
-              display: ["Playfair Display", "serif"],
+              display: ["Space Grotesk", "sans-serif"],
             },
           },
         },
@@ -65,7 +65,7 @@
         border-radius: 6px;
       }
       .article-header h1 {
-        font-family: "Playfair Display", serif;
+        font-family: "Space Grotesk", sans-serif;
         font-size: 2.5rem;
         font-weight: 800;
         margin-bottom: 1rem;
@@ -83,11 +83,11 @@
       }
       .article-content {
         line-height: 1.8;
-        color: #334e68;
+        color: #1e3a5a;
         font-size: 1rem;
       }
       .article-content h2 {
-        font-family: "Playfair Display", serif;
+        font-family: "Space Grotesk", sans-serif;
         color: #1a2332;
         font-size: 1.8rem;
         margin-top: 2rem;
@@ -105,8 +105,8 @@
         margin-bottom: 1rem;
       }
       .highlight-box {
-        background: #f0f4f8;
-        border-left: 4px solid #0ea5e9;
+        background: #eef3fc;
+        border-left: 4px solid #0062ff;
         padding: 1.5rem;
         margin: 2rem 0;
         border-radius: 4px;
@@ -131,17 +131,17 @@
       .stat-item .stat-number {
         font-size: 2.5rem;
         font-weight: 800;
-        color: #0ea5e9;
-        font-family: "Playfair Display", serif;
+        color: #0062ff;
+        font-family: "Space Grotesk", sans-serif;
       }
       .stat-item .stat-label {
         font-size: 0.85rem;
-        color: #64748b;
+        color: #3b5a7e;
         margin-top: 0.5rem;
         font-weight: 600;
       }
       .vacancy-list {
-        background: #f8f9fb;
+        background: #f0f6ff;
         padding: 2rem;
         border-radius: 4px;
         margin: 2rem 0;
@@ -163,19 +163,19 @@
       }
       .vacancy-meta {
         font-size: 0.9rem;
-        color: #64748b;
+        color: #3b5a7e;
       }
       .source-citation {
         margin-top: 3rem;
         padding-top: 2rem;
         border-top: 1px solid #e2e8f0;
         font-size: 0.85rem;
-        color: #64748b;
+        color: #3b5a7e;
       }
       .back-link {
         display: inline-block;
         margin-bottom: 2rem;
-        color: #0ea5e9;
+        color: #0062ff;
         text-decoration: none;
         font-weight: 600;
       }
@@ -185,8 +185,44 @@
     </style>
   </head>
   <body class="bg-white">
-    <div class="article-container">
-      <a href="../index.html#blog" class="back-link">← Volver al Blog</a>
+    <nav id="main-nav" class="fixed w-full z-50">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8 py-3 flex justify-between items-center">
+        <a href="../index.html" class="flex items-center gap-3 focus:outline-none">
+          <div class="w-9 h-9 bg-[#0062ff] rounded flex items-center justify-center text-white font-bold text-base shadow">TM</div>
+          <div class="text-left">
+            <div class="font-bold text-white text-sm leading-tight">Tu Mejor Talento</div>
+            <div class="text-[10px] font-semibold uppercase tracking-widest leading-none" style="color:#c4cddb">Humano · Cartagena</div>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-6">
+          <a href="../index.html" class="nav-link">Inicio</a>
+          <a href="../index.html?view=services" class="nav-link">Servicios</a>
+          <a href="../index.html?view=jobs" class="nav-link">Vacantes</a>
+          <a href="../index.html?view=success" class="nav-link">Éxitos</a>
+          <a href="../index.html?view=blog" class="nav-link active">Blog</a>
+          <a href="../index.html?view=about" class="nav-link">Nosotros</a>
+          <a href="../index.html?view=contact" class="btn-primary text-sm px-5 py-2">
+            <i data-lucide="phone" class="w-4 h-4"></i> Contáctanos
+          </a>
+        </div>
+        <button id="blog-menu-btn" class="md:hidden p-2 text-white rounded hover:bg-white/10 transition">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+      <div id="blog-mobile-menu" style="max-height:0;overflow:hidden;transition:max-height 0.4s;background:#000;border-top:1px solid rgba(255,255,255,0.06)">
+        <div class="flex flex-col px-6 py-5 space-y-1">
+          <a href="../index.html" class="block py-3 font-medium border-b hover:text-white" style="color:#e2e8f0;border-color:rgba(255,255,255,0.08)">Inicio</a>
+          <a href="../index.html?view=services" class="block py-3 font-medium border-b hover:text-white" style="color:#e2e8f0;border-color:rgba(255,255,255,0.08)">Servicios</a>
+          <a href="../index.html?view=jobs" class="block py-3 font-medium border-b hover:text-white" style="color:#e2e8f0;border-color:rgba(255,255,255,0.08)">Vacantes</a>
+          <a href="../index.html?view=success" class="block py-3 font-medium border-b hover:text-white" style="color:#e2e8f0;border-color:rgba(255,255,255,0.08)">Casos de Éxito</a>
+          <a href="../index.html?view=blog" class="block py-3 font-medium border-b" style="color:#fff;border-color:rgba(255,255,255,0.08)">Blog</a>
+          <a href="../index.html?view=about" class="block py-3 font-medium border-b hover:text-white" style="color:#e2e8f0;border-color:rgba(255,255,255,0.08)">Nosotros</a>
+          <a href="../index.html?view=contact" class="btn-primary mt-4 w-full justify-center text-sm">Contacto</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="article-container" style="padding-top:60px">
 
       <div class="article-header">
         <h1>Empleo en Cartagena: Análisis del Mercado en Mayo 2026</h1>
@@ -410,5 +446,64 @@
         </div>
       </div>
     </div>
+    <footer class="bg-black text-[#5b7a9e]">
+      <div class="max-w-7xl mx-auto px-5 lg:px-8 py-14 grid grid-cols-2 md:grid-cols-4 gap-10">
+        <div class="col-span-2 md:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 bg-[#0062ff] rounded flex items-center justify-center text-white font-bold text-sm">TM</div>
+            <div>
+              <div class="font-bold text-white text-sm leading-tight">Tu Mejor Talento</div>
+              <div class="text-[10px] uppercase tracking-widest" style="color:#5b7a9e">Humano · Cartagena</div>
+            </div>
+          </div>
+          <p class="text-xs leading-relaxed mb-4" style="color:#5b7a9e">Agencia de gestión de talento humano especializada en el sector turístico y hotelero de Cartagena de Indias.</p>
+          <a href="https://wa.me/573163030589" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-xs font-semibold hover:text-white transition-colors" style="color:#0062ff">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> +57 316 303 0589
+          </a>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 text-xs uppercase tracking-wider">Navegación</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="../index.html" class="hover:text-white transition-colors">Inicio</a></li>
+            <li><a href="../index.html?view=services" class="hover:text-white transition-colors">Servicios</a></li>
+            <li><a href="../index.html?view=jobs" class="hover:text-white transition-colors">Vacantes</a></li>
+            <li><a href="../index.html?view=success" class="hover:text-white transition-colors">Casos de Éxito</a></li>
+            <li><a href="../index.html?view=blog" class="hover:text-white transition-colors">Blog</a></li>
+            <li><a href="../index.html?view=about" class="hover:text-white transition-colors">Nosotros</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 text-xs uppercase tracking-wider">Sectores</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li>Hotelería y Alojamiento</li><li>Gastronomía y A&amp;B</li>
+            <li>Turismo y Agencias</li><li>Náutico y Cruceros</li>
+            <li>Administrativo</li><li>Logística</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 text-xs uppercase tracking-wider">Legal y Contacto</h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="../policy.html" class="hover:text-white transition-colors">Política de Datos</a></li>
+            <li><a href="../terms.html" class="hover:text-white transition-colors">Términos y Condiciones</a></li>
+            <li><a href="mailto:nohemicarrillosanchez@gmail.com" class="hover:text-white transition-colors break-all">nohemicarrillosanchez@gmail.com</a></li>
+            <li>Cartagena de Indias, Colombia</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t py-5 text-center text-[11px] px-5" style="border-color:rgba(255,255,255,0.08);color:#5b7a9e">
+        <p>&copy; 2026 Tu Mejor Talento Humano. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script>
+      lucide.createIcons();
+      const _nav = document.getElementById('main-nav');
+      window.addEventListener('scroll', () => _nav.classList.toggle('scrolled', window.scrollY > 20));
+      document.getElementById('blog-menu-btn').addEventListener('click', () => {
+        const mm = document.getElementById('blog-mobile-menu');
+        const open = mm.style.maxHeight !== '0px' && mm.style.maxHeight !== '' && mm.style.maxHeight !== '0';
+        mm.style.maxHeight = open ? '0' : '100vh';
+      });
+    </script>
+
   </body>
 </html>
