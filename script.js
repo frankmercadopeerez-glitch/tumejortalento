@@ -596,6 +596,15 @@ function submitContactForm(e) {
   lucide.createIcons();
 }
 
+function submitNewsletter(e) {
+  e.preventDefault();
+  const form = e.target;
+  const email = form.querySelector('[name="email"]').value;
+  const wa = `https://wa.me/573163030589?text=Hola%20Nohemi%2C%20quiero%20suscribirme%20al%20Boletin%20Laboral%20de%20Cartagena.%20Mi%20correo%20es%20${encodeURIComponent(email)}.`;
+  window.open(wa, "_blank", "noopener");
+  form.innerHTML = `<p class="text-amber-300 font-semibold">Te redirigimos a WhatsApp para confirmar tu suscripcion. Si no se abrio, escribe al +57 316 303 0589.</p>`;
+}
+
 // ═══════════════════════════════════════════════
 // BACK TO TOP & NAV SCROLL BEHAVIOR
 // ═══════════════════════════════════════════════

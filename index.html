@@ -22,6 +22,14 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.tumejortalento.com/" />
+    <meta property="og:image" content="https://www.tumejortalento.com/images/ncs-logo.jpg" />
+    <meta property="og:image:width" content="1240" />
+    <meta property="og:image:height" content="898" />
+    <meta property="og:locale" content="es_CO" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NCS · Nohemí Carrillo S. | La Ciencia de la Eficiencia, el Arte del Capital Humano" />
+    <meta name="twitter:description" content="Consultoría integral en gestión de talento humano, soporte administrativo y estrategia digital para empresas turísticas y comerciales en Cartagena." />
+    <meta name="twitter:image" content="https://www.tumejortalento.com/images/ncs-logo.jpg" />
     <link rel="icon" href="images/ncs-logo.jpg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap"
@@ -144,6 +152,7 @@
         <button
           class="md:hidden p-2 text-white rounded-lg hover:bg-white/10 transition"
           onclick="toggleMobileMenu()"
+          aria-label="Abrir menu de navegacion"
         >
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
@@ -1046,7 +1055,7 @@
                 </blockquote>
               </div>
               <div>
-                <img
+                <img loading="lazy"
                   src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=900&q=80"
                   alt="Equipo hotelero en Cartagena"
                   class="rounded-lg shadow-xl w-full object-cover h-80 lg:h-auto"
@@ -1344,7 +1353,7 @@
                 </a>
               </div>
               <div class="lg:col-span-2">
-                <img
+                <img loading="lazy"
                   src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=900&q=80"
                   alt="Hotel en Cartagena"
                   class="rounded-lg w-full shadow-lg object-cover h-72 lg:h-96"
@@ -1364,7 +1373,7 @@
                 class="bg-white rounded-lg overflow-hidden border border-slate-100 hover-card cursor-pointer block"
               >
                 <div class="h-48 overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&w=700&q=70"
                     alt="Certificación profesional"
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
@@ -1395,7 +1404,7 @@
                 class="bg-white rounded-lg overflow-hidden border border-slate-100 hover-card cursor-pointer block"
               >
                 <div class="h-48 overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=700&q=70"
                     alt="Consejos para candidatos"
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
@@ -1427,7 +1436,7 @@
                 class="bg-white rounded-lg overflow-hidden border border-slate-100 hover-card cursor-pointer block"
               >
                 <div class="h-48 overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=70"
                     alt="Experiencia profesional"
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
@@ -1459,7 +1468,7 @@
                 class="bg-white rounded-lg overflow-hidden border border-slate-100 hover-card cursor-pointer block"
               >
                 <div class="h-48 overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=70"
                     alt="Hotel de lujo en Cartagena"
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
@@ -1491,7 +1500,7 @@
                 class="bg-white rounded-lg overflow-hidden border border-slate-100 hover-card cursor-pointer block"
               >
                 <div class="h-48 overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=700&q=70"
                     alt="Equipo de trabajo en hotelería"
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
@@ -1523,7 +1532,7 @@
                 class="bg-white rounded-lg overflow-hidden border border-slate-100 hover-card cursor-pointer block"
               >
                 <div class="h-48 overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=700&q=70"
                     alt="Cartagena temporada alta"
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
@@ -1555,7 +1564,7 @@
               >
                 <span class="absolute top-3 right-3 z-10 bg-gold text-brand-900 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full shadow">Guía gratis</span>
                 <div class="h-48 overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=700&q=70"
                     alt="Equipo revisando un proceso de selección"
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
@@ -1597,15 +1606,12 @@
               Nuevas vacantes, analisis de mercado y consejos. Sin spam.
             </p>
             <form
-              onsubmit="
-                event.preventDefault();
-                this.innerHTML =
-                  '<p class=\'text-amber-300 font-semibold\'>Listo! Te contactaremos pronto.</p>';
-              "
+              onsubmit="submitNewsletter(event)"
               class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
             >
               <input
                 type="email"
+                name="email"
                 placeholder="tu@correo.com"
                 required
                 class="flex-1 px-4 py-3 rounded-md text-slate-800 text-sm border-0 outline-none"
@@ -1717,7 +1723,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
               <div>
                 <div class="flex items-center gap-5 mb-8">
-                  <img
+                  <img loading="lazy"
                     src="images/ncs-logo.jpg"
                     alt="NCS - Nohemí Carrillo S."
                     class="w-20 h-20 rounded-lg object-cover shadow-inner shrink-0"
@@ -2208,7 +2214,7 @@
       >
         <div class="col-span-2 md:col-span-1">
           <div class="flex items-center gap-3 mb-4">
-            <img
+            <img loading="lazy"
               src="images/ncs-logo.jpg"
               alt="NCS - Nohemí Carrillo S."
               class="w-9 h-9 rounded object-cover"
@@ -2355,6 +2361,7 @@
       >
         <button
           onclick="closeModal()"
+          aria-label="Cerrar"
           class="absolute top-3 right-3 z-20 bg-white/80 p-1.5 rounded-full text-[#6B5A7A] hover:text-red-500 transition-colors shadow-sm"
         >
           <i data-lucide="x" class="w-5 h-5"></i>
@@ -2500,6 +2507,7 @@
           >
           <button
             onclick="closeArticle()"
+            aria-label="Cerrar"
             class="text-[#A8987A] hover:text-slate-700 transition-colors p-1"
           >
             <i data-lucide="x" class="w-5 h-5"></i>
@@ -2524,6 +2532,7 @@
     <button
       id="back-to-top"
       onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      aria-label="Volver arriba"
       class="fixed bottom-6 right-6 z-50 w-11 h-11 bg-brand-700 hover:bg-brand-900 text-white rounded-full shadow-lg flex items-center justify-center transition-all"
     >
       <i data-lucide="chevron-up" class="w-5 h-5"></i>
