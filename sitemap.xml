@@ -71,4 +71,49 @@
   <priority>0.70</priority>
 </url>
 
+
+<!-- Landing pages SEO -->
+<url>
+  <loc>https://www.tumejortalento.com/seleccion-personal-cartagena.html</loc>
+  <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.tumejortalento.com/reclutamiento-hoteleria-cartagena.html</loc>
+  <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<!-- Blog artículos nuevos junio 2026 -->
+<url>
+  <loc>https://www.tumejortalento.com/blog/guia-salarios-hoteleria-cartagena-2026.html</loc>
+  <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.tumejortalento.com/blog/como-contratar-personal-hotel-cartagena.html</loc>
+  <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.tumejortalento.com/blog/reducir-rotacion-personal-hoteleria.html</loc>
+  <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.tumejortalento.com/blog/empleo-cartagena-junio-2026.html</loc>
+  <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.tumejortalento.com/blog/perfil-recepcionista-hotel-cartagena.html</loc>
+  <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.tumejortalento.com/blog/outsourcing-nomina-cartagena.html</loc>
+  <lastmod>2026-06-09T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+
 </urlset>

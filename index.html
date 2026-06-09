@@ -31,6 +31,7 @@
     <meta name="twitter:description" content="Consultoría integral en gestión de talento humano, soporte administrativo y estrategia digital para empresas turísticas y comerciales en Cartagena." />
     <meta name="twitter:image" content="https://www.tumejortalento.com/images/ncs-logo.jpg" />
     <link rel="icon" href="images/ncs-logo.jpg" />
+    <link rel="canonical" href="https://www.tumejortalento.com/" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap"
       rel="stylesheet"
@@ -73,17 +74,76 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "NCS · Nohemí Carrillo S. — La Ciencia de la Eficiencia, el Arte del Capital Humano",
-        "@id": "https://www.tumejortalento.com/",
-        "url": "https://www.tumejortalento.com/",
-        "telephone": "+573163030589",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Cartagena de Indias",
-          "addressRegion": "Bolivar",
-          "addressCountry": "CO"
-        }
+        "@graph": [
+          {
+            "@type": ["LocalBusiness", "ProfessionalService"],
+            "@id": "https://www.tumejortalento.com/#business",
+            "name": "NCS · Nohemí Carrillo S.",
+            "alternateName": "Tu Mejor Talento",
+            "description": "Consultora especializada en selección de personal, reclutamiento y gestión de talento humano para hoteles, restaurantes y empresas turísticas en Cartagena de Indias, Colombia.",
+            "url": "https://www.tumejortalento.com/",
+            "telephone": "+573163030589",
+            "email": "nohemicarrillosanchez@gmail.com",
+            "image": "https://www.tumejortalento.com/images/ncs-logo.jpg",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.tumejortalento.com/images/ncs-logo.jpg",
+              "width": 1240,
+              "height": 898
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Cartagena de Indias",
+              "addressRegion": "Bolívar",
+              "postalCode": "130001",
+              "addressCountry": "CO"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "10.4236",
+              "longitude": "-75.5477"
+            },
+            "areaServed": [
+              {"@type": "City", "name": "Cartagena de Indias"},
+              {"@type": "State", "name": "Bolívar"},
+              {"@type": "Country", "name": "Colombia"}
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Servicios de Talento Humano",
+              "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Selección de Personal", "description": "Reclutamiento y selección especializada para el sector hotelero y turístico de Cartagena"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Headhunting Ejecutivo", "description": "Búsqueda de directivos y mandos medios para empresas turísticas en Cartagena"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Consultoría de Talento Humano", "description": "Diagnóstico, estructura y gestión del área de RRHH para empresas en Cartagena"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Outsourcing de Nómina", "description": "Gestión y liquidación de nómina para empresas turísticas y hoteleras en Cartagena"}}
+              ]
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "08:00",
+                "closes": "18:00"
+              }
+            ],
+            "founder": {
+              "@type": "Person",
+              "name": "Nohemí Carrillo S.",
+              "jobTitle": "Consultora de Talento Humano",
+              "url": "https://www.tumejortalento.com/"
+            },
+            "knowsAbout": ["Selección de personal", "Hotelería", "Turismo", "Gestión de talento humano", "Reclutamiento", "Cartagena de Indias"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.tumejortalento.com/#website",
+            "url": "https://www.tumejortalento.com/",
+            "name": "NCS · Nohemí Carrillo S.",
+            "description": "Consultoría en selección de personal y talento humano para el sector hotelero y turístico de Cartagena.",
+            "publisher": {"@id": "https://www.tumejortalento.com/#business"},
+            "inLanguage": "es-CO"
+          }
+        ]
       }
     </script>
   </head>
