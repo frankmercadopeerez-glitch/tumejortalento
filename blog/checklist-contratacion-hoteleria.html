@@ -2,6 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="theme-color" content="#1F1330" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -18,7 +19,9 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Guía Gratis: 10 Señales de que tu Próxima Contratación Va a Fallar - NCS · Nohemí Carrillo S." />
     <meta name="twitter:description" content="Guía gratuita para empresas: 10 señales de que tu próxima contratación va a fallar, y cómo corregirlas a tiempo. Basada en procesos reales de selección en Cartagena." />
-    <meta name="twitter:image" content="https://www.tumejortalento.com/images/ncs-logo.jpg" />
+    <meta name="twitter:image" content="https://www.tumejortalento.com/images/ncs-logo.jpg" />    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap"
       rel="stylesheet"
@@ -223,8 +226,9 @@
       "inLanguage": "es-CO"
     }
     </script>
-  </head>
-  <body class="bg-white">
+      <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+  <body class="overflow-x-hidden bg-white">
     <nav id="main-nav" class="fixed w-full z-50">
       <div class="max-w-7xl mx-auto px-5 lg:px-8 py-3 flex justify-between items-center">
         <a href="../index.html" class="flex items-center gap-3 focus:outline-none">
@@ -245,7 +249,7 @@
             <i data-lucide="phone" class="w-4 h-4"></i> Contáctanos
           </a>
         </div>
-        <button id="blog-menu-btn" class="md:hidden p-2 text-white rounded hover:bg-white/10 transition">
+        <button id="blog-menu-btn" aria-label="Abrir menú" class="md:hidden p-2 text-white rounded hover:bg-white/10 transition">
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
       </div>
@@ -536,5 +540,8 @@
       });
     </script>
 
+      <a href="https://wa.me/573163030589?text=Hola%20Nohem%C3%AD%2C%20le%C3%AD%20un%20art%C3%ADculo%20en%20su%20blog" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 hover:scale-110 transition-transform drop-shadow-lg">
+      <img src="../images/WhatsApp.svg.webp" alt="WhatsApp" class="w-14 h-14" />
+    </a>
   </body>
 </html>

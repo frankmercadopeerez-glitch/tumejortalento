@@ -2,6 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="theme-color" content="#1F1330" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -31,7 +32,9 @@
     <meta name="twitter:description" content="Consultoría integral en gestión de talento humano, soporte administrativo y estrategia digital para empresas turísticas y comerciales en Cartagena." />
     <meta name="twitter:image" content="https://www.tumejortalento.com/images/ncs-logo.jpg" />
     <link rel="icon" href="images/ncs-logo.jpg" />
-    <link rel="canonical" href="https://www.tumejortalento.com/" />
+    <link rel="canonical" href="https://www.tumejortalento.com/" />    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap"
       rel="stylesheet"
@@ -148,7 +151,7 @@
     </script>
   </head>
   <body
-    class="bg-white text-[#2C1B3D] antialiased flex flex-col min-h-screen"
+    class="overflow-x-hidden bg-white text-[#2C1B3D] antialiased flex flex-col min-h-screen"
   >
     <!-- NAV -->
     <nav id="main-nav" class="fixed w-full z-50">
@@ -278,6 +281,7 @@
             <img
               src="https://images.unsplash.com/photo-1583531352515-8884af319dc1?auto=format&fit=crop&w=2070&q=80"
               alt="Centro historico de Cartagena"
+              fetchpriority="high"
               class="w-full h-full object-cover"
             />
             <div
@@ -2539,7 +2543,7 @@
             </h4>
             <form onsubmit="submitApplication(event)" class="space-y-3">
               <input type="hidden" id="modal-job-id" value="" />
-              <div class="grid grid-cols-2 gap-3">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <input
                   type="text"
                   id="apply-name"
