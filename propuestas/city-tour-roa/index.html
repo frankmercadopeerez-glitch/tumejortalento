@@ -153,32 +153,6 @@
         </div>
       </div>
 
-      <!-- Evidencia capturas -->
-      <p class="text-[11px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-2">Evidencia del análisis (Semrush · SEOQuake · Wappalyzer · 13 jun 2026)</p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
-        <div class="evidence-slot">
-          <img src="./semrush-overview.jpg" alt="Semrush visión general" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-          <div style="display:none;flex-direction:column;align-items:center;gap:4px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            <span>Guardar captura como<br/><strong>semrush-overview.jpg</strong></span>
-          </div>
-        </div>
-        <div class="evidence-slot">
-          <img src="./wappalyzer.jpg" alt="Tecnologías del sitio" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-          <div style="display:none;flex-direction:column;align-items:center;gap:4px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            <span>Guardar captura como<br/><strong>wappalyzer.jpg</strong></span>
-          </div>
-        </div>
-        <div class="evidence-slot sm:col-span-2">
-          <img src="./seoquake.jpg" alt="Auditoría SEOQuake" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-          <div style="display:none;flex-direction:column;align-items:center;gap:4px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            <span>Guardar captura como<br/><strong>seoquake.jpg</strong></span>
-          </div>
-        </div>
-      </div>
-
       <!-- Lo que encontramos -->
       <p class="text-[11px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-3">Problemas encontrados</p>
       <div class="space-y-2 mb-4">
@@ -186,8 +160,8 @@
         <div class="doc-card flex items-start gap-3 p-3 rounded-md border border-rose-200 bg-rose-50">
           <span class="badge-urgent mt-0.5">URGENTE</span>
           <div>
-            <p class="text-sm font-bold text-[#1F1330]">Tours de Brooklyn, Bali y Yucatán visibles en su página web</p>
-            <p class="text-xs text-[#6B5A7A] leading-relaxed mt-0.5">Cuando un cliente potencial visita el sitio, ve tours de "Brooklyn Christmas Lights", "Discovery Islands Kayaking Tour", "Los Glaciares Fitz Roy Trip" y "Mykonos and Santorini Tour" mezclados con los tours reales de Cartagena. Estos son productos de demostración del sistema que nunca fueron eliminados. Para cualquier turista que llegue al sitio, esto hace que el negocio parezca <strong>no serio o incluso engañoso</strong>.</p>
+            <p class="text-sm font-bold text-[#1F1330]">Productos demo de WordPress activos (tours de Brooklyn, Bali y Yucatán)</p>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed mt-0.5">El sistema de ventas online (WooCommerce) tiene activos los productos de ejemplo que vienen por defecto con el tema: "Brooklyn Christmas Lights", "Discovery Islands Kayaking Tour", "Mykonos and Santorini Tour", "Los Glaciares Fitz Roy Trip". Estos no se ven en la página principal, pero aparecen en la sección de tienda (<strong>/shop</strong>) y en las páginas de categorías — y Google los detecta e indexa. Esto genera confusión y daña la credibilidad del sitio. <strong>En WP Admin → Productos → Todos los productos</strong> se listan todos y se eliminan desde ahí.</p>
           </div>
         </div>
 
@@ -248,6 +222,14 @@
         </div>
 
       </div>
+
+        <div class="doc-card flex items-start gap-3 p-3 rounded-md border border-amber-100 bg-amber-50">
+          <span class="badge-warn mt-0.5">ALTO</span>
+          <div>
+            <p class="text-sm font-bold text-[#1F1330]">Sin reseñas visibles — sección de testimonios con texto de ejemplo</p>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed mt-0.5">El sitio tiene una sección llamada "What They're Saying" (Lo que dicen de nosotros) que aparece en el análisis técnico, pero contiene texto de plantilla sin reseñas reales. No hay integración con Google Reviews ni TripAdvisor. Las reseñas son un factor clave de conversión para turistas que no conocen la empresa — es el primer lugar donde buscan validación antes de reservar.</p>
+          </div>
+        </div>
 
       <!-- Lo que SÍ está bien -->
       <div class="p-4 rounded-lg bg-green-50 border border-green-200 doc-card">
@@ -417,6 +399,17 @@
           </div>
         </div>
 
+        <div class="doc-card flex gap-4 p-4 rounded-lg border border-slate-200">
+          <div class="step-num">9</div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between flex-wrap gap-2 mb-1">
+              <h3 class="font-bold text-sm text-[#1F1330]">Sección de Reseñas Reales</h3>
+              <span class="text-[10px] font-bold text-[#6B5A7A] bg-slate-100 px-2 py-0.5 rounded">Semana 4</span>
+            </div>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed">Se reemplaza el texto demo de la sección "What They're Saying" con reseñas reales del negocio. Se integra el widget de Google Reviews para mostrar automáticamente las valoraciones del perfil de Google Maps. Si no tienen reseñas todavía en Google, se crea una estrategia para solicitarlas a los clientes actuales y se agrega una sección de testimonios manuales con fotos y nombres reales.</p>
+          </div>
+        </div>
+
         <div class="doc-card flex gap-4 p-4 rounded-lg border border-[#C9A227] bg-amber-50">
           <div class="step-num" style="background:#C9A227;color:#1F1330">✓</div>
           <div class="flex-1">
@@ -424,7 +417,7 @@
               <h3 class="font-bold text-sm text-[#1F1330]">Entrega Final: Web Limpia, Indexada y Funcional</h3>
               <span class="text-[10px] font-bold text-[#6B5A7A] bg-white px-2 py-0.5 rounded border">Semana 4</span>
             </div>
-            <p class="text-xs text-[#6B5A7A] leading-relaxed">Entrega del sitio sin contenido demo, con información real, tours reales, sistema de reservas configurado, indexado por Google y verificado en Search Console. Se entrega informe antes/después con capturas. El segundo pago de <strong>$750.000 COP</strong> se efectúa en este momento.</p>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed">Entrega del sitio sin contenido demo, con información real, tours reales, sistema de reservas configurado, reseñas activas, indexado por Google y verificado en Search Console. Se entrega informe antes/después. El segundo pago de <strong>$750.000 COP</strong> se efectúa en este momento.</p>
           </div>
         </div>
 

@@ -173,31 +173,7 @@
         </div>
       </div>
 
-      <!-- Capturas de evidencia -->
-      <p class="text-[11px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-2">Evidencia del análisis (Semrush · 12 jun 2026)</p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
-        <div class="evidence-slot">
-          <img src="./semrush-overview.jpg" alt="Visión general de dominio Semrush" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-          <div style="display:none;flex-direction:column;align-items:center;gap:4px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            <span style="color:#94a3b8;font-size:11px">Guardar captura como<br/><strong>semrush-overview.jpg</strong></span>
-          </div>
-        </div>
-        <div class="evidence-slot">
-          <img src="./semrush-keywords.jpg" alt="Posicionamiento orgánico Semrush" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-          <div style="display:none;flex-direction:column;align-items:center;gap:4px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            <span style="color:#94a3b8;font-size:11px">Guardar captura como<br/><strong>semrush-keywords.jpg</strong></span>
-          </div>
-        </div>
-        <div class="evidence-slot sm:col-span-2">
-          <img src="./wappalyzer.jpg" alt="Tecnologías detectadas (Wappalyzer)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-          <div style="display:none;flex-direction:column;align-items:center;gap:4px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            <span style="color:#94a3b8;font-size:11px">Guardar captura como<br/><strong>wappalyzer.jpg</strong></span>
-          </div>
-        </div>
-      </div>
+
 
       <!-- Problemas técnicos encontrados -->
       <p class="text-[11px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-3">Problemas técnicos encontrados</p>
@@ -451,15 +427,23 @@
         6. Accesos que necesitamos para iniciar
       </h2>
       <p class="text-sm text-[#6B5A7A] leading-relaxed mb-4">
-        Para poder trabajar en el sitio web de Destinos Tour Cartagena necesitamos que nos faciliten los siguientes accesos antes del primer pago:
+        Para poder construir y lanzar el nuevo sitio de Destinos Tour Cartagena solo necesitamos lo siguiente:
       </p>
+
+      <!-- Nota explicativa código vs Wix -->
+      <div class="p-4 rounded-lg bg-[#1F1330] text-white mb-4 doc-card">
+        <p class="text-xs font-bold uppercase tracking-widest text-[#C9A227] mb-2">¿Por qué construirla desde cero en código y no seguir con Wix?</p>
+        <p class="text-sm leading-relaxed mb-2">Wix es una plataforma de "arrendamiento" — el sitio vive en los servidores de Wix, con sus reglas, sus limitaciones técnicas y sus costos mensuales crecientes. No permite optimizaciones técnicas profundas de SEO, carga más lento, y Google la posiciona peor que sitios en código propio.</p>
+        <p class="text-sm leading-relaxed text-white/80">El nuevo sitio se construye en <strong>HTML/CSS/JavaScript moderno</strong>, alojado en un servidor independiente de alta velocidad. Es más rápido, totalmente optimizable para Google, y el cliente es dueño completo del código — sin pagos mensuales a plataformas de terceros. Todo el contenido, fotos y textos del sitio actual de Wix se migran al nuevo.</p>
+      </div>
+
       <div class="space-y-3">
-        <div class="doc-card flex items-start gap-3 p-4 rounded-lg border-2 border-red-100 bg-red-50">
-          <span class="text-lg mt-0.5">🔑</span>
+        <div class="doc-card flex items-start gap-3 p-4 rounded-lg border-2 border-brand-100 bg-brand-50">
+          <span class="text-lg mt-0.5">🌐</span>
           <div>
-            <p class="text-sm font-bold text-[#1F1330] mb-1">Acceso a la cuenta Wix (obligatorio)</p>
-            <p class="text-xs text-[#6B5A7A] leading-relaxed">Correo y contraseña de la cuenta Wix donde está registrado el sitio. Esto nos permite gestionar el dominio <strong>destinostourcartagena.com</strong> y apuntar el dominio a la nueva plataforma cuando el sitio nuevo esté listo.</p>
-            <p class="text-xs text-amber-700 font-semibold mt-1">⚠️ La nueva web se construye en código propio, por fuera de Wix — el dominio se transfiere a un servidor independiente.</p>
+            <p class="text-sm font-bold text-[#1F1330] mb-1">Acceso al dominio en Wix — solo para el día de la migración</p>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed">No necesitamos acceso al editor de Wix ni a los contenidos del sitio actual. Lo único que necesitamos es acceso a la <strong>gestión del dominio</strong> en la cuenta Wix para cambiar los registros DNS en el momento en que el nuevo sitio esté listo. Es una operación de 5 minutos que se hace una sola vez — y el dominio <strong>destinostourcartagena.com</strong> queda apuntando al nuevo sitio para siempre.</p>
+            <p class="text-xs text-green-700 font-semibold mt-1">✓ No necesitan cancelar Wix antes — el cambio se hace cuando el sitio nuevo está terminado y aprobado.</p>
           </div>
         </div>
         <div class="doc-card flex items-start gap-3 p-4 rounded-lg border border-slate-200">
