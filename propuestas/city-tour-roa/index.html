@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Propuesta · City Tour de Roa — NCS Consultoría</title>
+  <link rel="icon" href="/images/ncs-logo.jpg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ["Space Grotesk", "Inter", "sans-serif"],
+            sans: ["Inter", "sans-serif"],
+          },
+          colors: {
+            brand: {
+              50: "#f7f4fa", 100: "#ece4f2", 200: "#d6c5e3", 300: "#bb9fd0",
+              400: "#9b76b8", 500: "#7d54a0", 600: "#623f85", 700: "#4a2f68",
+              800: "#34204A", 900: "#1F1330",
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body { font-family: "Inter", sans-serif; }
+    h1, h2, h3, h4 { font-family: "Space Grotesk", "Inter", sans-serif; }
+    .doc-card { break-inside: avoid; }
+    @media print {
+      @page { size: A4; margin: 0; }
+      html, body { background: #ffffff !important; }
+      .no-print { display: none !important; }
+      .doc-page { box-shadow: none !important; border: none !important; max-width: 100% !important; margin: 0 !important; padding: 14mm 13mm !important; }
+      .doc-section { margin-bottom: 20px !important; }
+      .doc-card { page-break-inside: avoid; break-inside: avoid; }
+      .doc-bar { margin-top: 10mm !important; break-inside: avoid; page-break-inside: avoid; }
+      h1, h2, h3 { page-break-after: avoid; break-after: avoid; }
+      p, li { orphans: 3; widows: 3; }
+    }
+    .metric-bad  { color: #dc2626; }
+    .metric-warn { color: #d97706; }
+    .metric-ok   { color: #16a34a; }
+    .evidence-slot { border: 2px dashed #d1d5db; background: #f8fafc; border-radius: 8px; min-height: 140px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; color: #94a3b8; font-size: 11px; text-align: center; padding: 12px; }
+    .evidence-slot img { max-width: 100%; max-height: 220px; border-radius: 6px; object-fit: contain; display: block; }
+    .badge-urgent { background:#fff1f2; color:#9f1239; border:1px solid #fecdd3; border-radius:4px; padding:2px 7px; font-size:10px; font-weight:700; white-space:nowrap; }
+    .badge-red    { background:#fef2f2; color:#b91c1c; border:1px solid #fecaca; border-radius:4px; padding:2px 7px; font-size:10px; font-weight:700; white-space:nowrap; }
+    .badge-warn   { background:#fffbeb; color:#92400e; border:1px solid #fde68a; border-radius:4px; padding:2px 7px; font-size:10px; font-weight:700; white-space:nowrap; }
+    .badge-ok     { background:#f0fdf4; color:#166534; border:1px solid #bbf7d0; border-radius:4px; padding:2px 7px; font-size:10px; font-weight:700; white-space:nowrap; }
+    .step-num { width:28px; height:28px; border-radius:50%; background:#34204A; color:white; font-weight:800; font-size:12px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  </style>
+</head>
+<body class="bg-slate-200">
+
+  <!-- Barra flotante -->
+  <div class="no-print fixed top-0 inset-x-0 z-50 bg-[#1F1330] text-white py-3 px-4 sm:px-5 flex items-center justify-between gap-3 shadow-lg">
+    <div class="flex items-center gap-2.5 min-w-0">
+      <a href="/propuestas/index.html" class="shrink-0 text-white/70 hover:text-white transition" aria-label="Volver">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+      </a>
+      <img src="/images/ncs-logo.jpg" alt="NCS" class="w-8 h-8 rounded object-cover shrink-0" />
+      <span class="text-sm font-semibold tracking-wide truncate">Propuesta — City Tour de Roa</span>
+    </div>
+    <button onclick="window.print()" class="shrink-0 inline-flex items-center gap-2 bg-[#C9A227] text-[#1F1330] font-bold text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-md hover:brightness-95 transition whitespace-nowrap">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      <span class="hidden sm:inline">Imprimir / Guardar como PDF</span>
+      <span class="sm:hidden">PDF</span>
+    </button>
+  </div>
+
+  <!-- DOCUMENTO -->
+  <main class="doc-page max-w-3xl mx-auto bg-white shadow-xl my-24 print:my-0 px-8 py-10 md:px-14 md:py-14 text-[#2C1B3D]">
+
+    <!-- ENCABEZADO -->
+    <header class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 pb-8 border-b-2 border-[#34204A]">
+      <div class="flex items-start gap-4">
+        <img src="/images/ncs-logo.jpg" alt="NCS" class="w-16 h-16 rounded-lg object-cover shadow shrink-0" />
+        <div>
+          <h2 class="font-display text-xl font-bold text-[#1F1330] mb-0.5">Nohemí Carrillo S.</h2>
+          <p class="text-[11px] uppercase tracking-[0.18em] text-[#C9A227] font-bold mb-1.5">Consultoría en Gestión Turística y Empresarial</p>
+          <div class="text-xs text-[#6B5A7A] space-y-0.5 leading-relaxed">
+            <p>Especialista en Posicionamiento Web y Estrategia Digital</p>
+            <p>Cartagena de Indias, Colombia</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-left md:text-right">
+        <p class="text-[11px] uppercase tracking-[0.3em] text-[#C9A227] font-bold mb-1">Propuesta de Optimización Web</p>
+        <h1 class="font-display text-2xl md:text-3xl font-bold text-[#1F1330] mb-1">City Tour de Roa</h1>
+        <p class="text-xs text-[#6B5A7A]">citytourderoa.com</p>
+        <p class="text-xs text-[#6B5A7A] mt-0.5">Fecha: 17 de Junio, 2026</p>
+      </div>
+    </header>
+
+    <!-- RESUMEN -->
+    <section class="grid grid-cols-3 gap-4 py-6 mb-6 border-b border-slate-200 doc-section">
+      <div class="text-center">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-1">Inversión total</p>
+        <p class="font-display text-xl font-bold text-[#1F1330]">$1.500.000</p>
+        <p class="text-[10px] text-[#6B5A7A]">COP · única vez</p>
+      </div>
+      <div class="text-center border-x border-slate-200">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-1">Condición de pago</p>
+        <p class="font-display text-xl font-bold text-[#1F1330]">50 / 50</p>
+        <p class="text-[10px] text-[#6B5A7A]">inicio · entrega</p>
+      </div>
+      <div class="text-center">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-1">Acompañamiento</p>
+        <p class="font-display text-xl font-bold text-[#1F1330]">$400.000</p>
+        <p class="text-[10px] text-[#6B5A7A]">COP / mes</p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 1: DIAGNÓSTICO -->
+    <section class="mb-10 doc-section">
+      <h2 class="font-display text-sm sm:text-base font-bold text-white bg-[#34204A] rounded-md px-4 sm:px-5 py-3 mb-5 tracking-wide doc-bar">
+        1. Diagnóstico: Así está su sitio hoy
+      </h2>
+      <p class="text-sm text-[#4a2f68] leading-relaxed mb-5">
+        Analizamos <strong>citytourderoa.com</strong> con herramientas profesionales (Semrush, SEOQuake, Wappalyzer) el <strong>13 de junio de 2026</strong>. City Tour de Roa tiene algo que la mayoría de competidores no tiene: un sitio en WordPress con las herramientas correctas instaladas. El problema no es la plataforma — es que nadie la ha configurado correctamente, y hay errores urgentes que están ahuyentando a los clientes que logran llegar.
+      </p>
+
+      <!-- Métricas -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
+        <div class="doc-card p-4 rounded-lg border-2 border-red-100 bg-red-50 text-center">
+          <p class="text-[10px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-1">Autoridad Web</p>
+          <p class="font-display text-3xl font-bold metric-bad">2</p>
+          <p class="text-[10px] text-red-600 font-bold mt-1">Muy Baja</p>
+          <p class="text-[10px] text-[#6B5A7A] mt-0.5">escala del 1 al 100</p>
+        </div>
+        <div class="doc-card p-4 rounded-lg border-2 border-red-100 bg-red-50 text-center">
+          <p class="text-[10px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-1">Páginas en Google</p>
+          <p class="font-display text-3xl font-bold metric-bad">0</p>
+          <p class="text-[10px] text-red-600 font-bold mt-1">Cero indexadas</p>
+          <p class="text-[10px] text-[#6B5A7A] mt-0.5">Google no la ve</p>
+        </div>
+        <div class="doc-card p-4 rounded-lg border-2 border-red-100 bg-red-50 text-center">
+          <p class="text-[10px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-1">Tráfico Orgánico</p>
+          <p class="font-display text-3xl font-bold metric-bad">n/d</p>
+          <p class="text-[10px] text-red-600 font-bold mt-1">Sin datos</p>
+          <p class="text-[10px] text-[#6B5A7A] mt-0.5">insuficiente para medir</p>
+        </div>
+        <div class="doc-card p-4 rounded-lg border-2 border-amber-100 bg-amber-50 text-center">
+          <p class="text-[10px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-1">IA (ChatGPT)</p>
+          <p class="font-display text-3xl font-bold metric-warn">1</p>
+          <p class="text-[10px] text-amber-700 font-bold mt-1">1 mención</p>
+          <p class="text-[10px] text-[#6B5A7A] mt-0.5">potencial sin explotar</p>
+        </div>
+      </div>
+
+      <!-- Evidencia capturas -->
+      <p class="text-[11px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-2">Evidencia del análisis (Semrush · SEOQuake · Wappalyzer · 13 jun 2026)</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
+        <div class="evidence-slot">
+          <img src="./semrush-overview.jpg" alt="Semrush visión general" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div style="display:none;flex-direction:column;align-items:center;gap:4px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>Guardar captura como<br/><strong>semrush-overview.jpg</strong></span>
+          </div>
+        </div>
+        <div class="evidence-slot">
+          <img src="./wappalyzer.jpg" alt="Tecnologías del sitio" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div style="display:none;flex-direction:column;align-items:center;gap:4px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>Guardar captura como<br/><strong>wappalyzer.jpg</strong></span>
+          </div>
+        </div>
+        <div class="evidence-slot sm:col-span-2">
+          <img src="./seoquake.jpg" alt="Auditoría SEOQuake" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div style="display:none;flex-direction:column;align-items:center;gap:4px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#cbd5e1" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>Guardar captura como<br/><strong>seoquake.jpg</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lo que encontramos -->
+      <p class="text-[11px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-3">Problemas encontrados</p>
+      <div class="space-y-2 mb-4">
+
+        <div class="doc-card flex items-start gap-3 p-3 rounded-md border border-rose-200 bg-rose-50">
+          <span class="badge-urgent mt-0.5">URGENTE</span>
+          <div>
+            <p class="text-sm font-bold text-[#1F1330]">Tours de Brooklyn, Bali y Yucatán visibles en su página web</p>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed mt-0.5">Cuando un cliente potencial visita el sitio, ve tours de "Brooklyn Christmas Lights", "Discovery Islands Kayaking Tour", "Los Glaciares Fitz Roy Trip" y "Mykonos and Santorini Tour" mezclados con los tours reales de Cartagena. Estos son productos de demostración del sistema que nunca fueron eliminados. Para cualquier turista que llegue al sitio, esto hace que el negocio parezca <strong>no serio o incluso engañoso</strong>.</p>
+          </div>
+        </div>
+
+        <div class="doc-card flex items-start gap-3 p-3 rounded-md border border-rose-200 bg-rose-50">
+          <span class="badge-urgent mt-0.5">URGENTE</span>
+          <div>
+            <p class="text-sm font-bold text-[#1F1330]">Teléfono y correo de contacto falsos visibles al público</p>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed mt-0.5">El sitio muestra el número <strong>"92 666 888 0000"</strong> y el correo <strong>"contact@example.com"</strong> como información de contacto real. Estos son datos de plantilla que nunca fueron reemplazados. Un cliente que intente llamar o escribir simplemente no encontrará nada, perdiendo la reserva definitivamente.</p>
+          </div>
+        </div>
+
+        <div class="doc-card flex items-start gap-3 p-3 rounded-md border border-red-100 bg-red-50">
+          <span class="badge-red mt-0.5">CRÍTICO</span>
+          <div>
+            <p class="text-sm font-bold text-[#1F1330]">Cero páginas indexadas por Google</p>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed mt-0.5">Búsqueda directa de <em>site:citytourderoa.com</em> en Google: resultado vacío. El sitio no aparece en ninguna búsqueda, ni siquiera cuando alguien escribe exactamente "City Tour de Roa Cartagena". Solo aparecen las redes sociales del negocio. El sitio web existe pero Google actúa como si no existiera.</p>
+          </div>
+        </div>
+
+        <div class="doc-card flex items-start gap-3 p-3 rounded-md border border-red-100 bg-red-50">
+          <span class="badge-red mt-0.5">CRÍTICO</span>
+          <div>
+            <p class="text-sm font-bold text-[#1F1330]">Sin título principal (H1) en ninguna página</p>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed mt-0.5">El análisis técnico confirma <strong>H1: 0</strong> — ninguna página del sitio tiene el título principal que Google usa para entender de qué trata cada página. Hay 18 subtítulos secundarios y 34 de tercer nivel, pero el más importante (el primero) simplemente no existe. Es como un libro sin portada.</p>
+          </div>
+        </div>
+
+        <div class="doc-card flex items-start gap-3 p-3 rounded-md border border-red-100 bg-red-50">
+          <span class="badge-red mt-0.5">CRÍTICO</span>
+          <div>
+            <p class="text-sm font-bold text-[#1F1330]">48 fotos del sitio sin descripción para Google</p>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed mt-0.5">Las 48 imágenes del sitio (fotos de tours, barcos, paisajes) no tienen texto descriptivo (alt text). Para Google, esas fotos son invisibles. El sitio pierde toda la visibilidad que podría tener en búsquedas de imágenes como "tour islas del rosario fotos" o "city tour Cartagena".</p>
+          </div>
+        </div>
+
+        <div class="doc-card flex items-start gap-3 p-3 rounded-md border border-red-100 bg-red-50">
+          <span class="badge-red mt-0.5">CRÍTICO</span>
+          <div>
+            <p class="text-sm font-bold text-[#1F1330]">Yoast SEO instalado pero sin configurar</p>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed mt-0.5">El sitio tiene el plugin de SEO más potente del mercado (Yoast SEO) instalado, pero no está configurado. Es como tener un Ferrari sin llantas. El sitemap que genera solo incluye los productos de WooCommerce, omitiendo las páginas principales. Google no recibe la información que necesita para posicionar el sitio.</p>
+          </div>
+        </div>
+
+        <div class="doc-card flex items-start gap-3 p-3 rounded-md border border-amber-100 bg-amber-50">
+          <span class="badge-warn mt-0.5">ALTO</span>
+          <div>
+            <p class="text-sm font-bold text-[#1F1330]">Metadescripción muy corta (141 caracteres)</p>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed mt-0.5">La descripción que aparece en Google al encontrar el sitio tiene solo 141 caracteres. El mínimo recomendado es 160 y el óptimo es 200–300. Este texto es la primera impresión del negocio en resultados de búsqueda — debe convencer al turista de hacer clic.</p>
+          </div>
+        </div>
+
+        <div class="doc-card flex items-start gap-3 p-3 rounded-md border border-amber-100 bg-amber-50">
+          <span class="badge-warn mt-0.5">ALTO</span>
+          <div>
+            <p class="text-sm font-bold text-[#1F1330]">Schema.org instalado pero sin tipo definido</p>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed mt-0.5">Hay código de Schema (ficha técnica para buscadores e IA) en el sitio, pero el análisis confirma que Google "no puede determinar su tipo". Es código incompleto que no sirve para posicionar. Necesita configurarse como TourOperator + LocalBusiness con dirección, teléfono real, servicios y coordenadas de Cartagena.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Lo que SÍ está bien -->
+      <div class="p-4 rounded-lg bg-green-50 border border-green-200 doc-card">
+        <p class="text-[11px] font-bold uppercase tracking-wider text-green-800 mb-2">✅ Lo que el sitio tiene bien (ventaja sobre competidores en Wix)</p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-1">
+          <p class="text-xs text-green-800">✓ WordPress profesional</p>
+          <p class="text-xs text-green-800">✓ Canonical configurado</p>
+          <p class="text-xs text-green-800">✓ Sitemap XML presente</p>
+          <p class="text-xs text-green-800">✓ Open Graph y Twitter card</p>
+          <p class="text-xs text-green-800">✓ Google Analytics activo</p>
+          <p class="text-xs text-green-800">✓ Robots.txt correcto</p>
+          <p class="text-xs text-green-800">✓ Idioma es-CO declarado</p>
+          <p class="text-xs text-green-800">✓ Yoast SEO instalado</p>
+          <p class="text-xs text-green-800">✓ WooCommerce para ventas online</p>
+        </div>
+        <p class="text-xs text-green-700 mt-2 leading-relaxed"><strong>Esto es importante:</strong> a diferencia de sitios construidos en Wix, WordPress permite optimización técnica completa. El trabajo que se necesita aquí es corregir y terminar lo que se dejó a medias — no empezar desde cero.</p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: IMPACTO EN VENTAS -->
+    <section class="mb-10 doc-section">
+      <h2 class="font-display text-sm sm:text-base font-bold text-white bg-[#34204A] rounded-md px-4 sm:px-5 py-3 mb-5 tracking-wide doc-bar">
+        2. Lo que esto significa en reservas perdidas
+      </h2>
+
+      <div class="p-5 rounded-lg bg-[#1F1330] text-white mb-5 doc-card">
+        <p class="text-sm leading-relaxed mb-3">
+          <strong class="text-[#C9A227]">El escenario actual es el peor posible:</strong> el sitio existe, pero no aparece en Google. Y cuando alguien lo encuentra por otro medio (redes sociales, referido, tarjeta de presentación) y entra al sitio, ve tours de Bali y Brooklyn junto a los de Cartagena, y un teléfono de contacto que no sirve.
+        </p>
+        <p class="text-sm text-white/80 leading-relaxed">
+          Ese visitante cierra la página en segundos. La oportunidad de venta se pierde por completo, y el negocio ni siquiera sabe que ocurrió.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4">
+        <div class="doc-card p-4 rounded-lg border border-slate-200 text-center">
+          <div class="text-3xl mb-2">🔍</div>
+          <p class="font-bold text-sm text-[#1F1330] mb-1">Invisible en búsquedas</p>
+          <p class="text-xs text-[#6B5A7A] leading-relaxed">Ninguna página del sitio aparece en Google. Cada turista que busca "city tour Cartagena" o "chiva rumbera Cartagena" toma una decisión sin saber que City Tour de Roa existe.</p>
+        </div>
+        <div class="doc-card p-4 rounded-lg border border-slate-200 text-center">
+          <div class="text-3xl mb-2">🚫</div>
+          <p class="font-bold text-sm text-[#1F1330] mb-1">Sitio que espanta clientes</p>
+          <p class="text-xs text-[#6B5A7A] leading-relaxed">Tours de otros países y datos de contacto falsos activamente destruyen la confianza del visitante. Un turista que llega al sitio y ve esto <strong>no regresa</strong>.</p>
+        </div>
+        <div class="doc-card p-4 rounded-lg border border-slate-200 text-center">
+          <div class="text-3xl mb-2">💰</div>
+          <p class="font-bold text-sm text-[#1F1330] mb-1">WooCommerce sin usar</p>
+          <p class="text-xs text-[#6B5A7A] leading-relaxed">El sitio tiene un sistema de reservas y pagos online instalado (WooCommerce) que podría recibir reservas las 24 horas — completamente desconfigurado y sin aprovechar.</p>
+        </div>
+      </div>
+
+      <div class="p-4 rounded-lg border-l-4 border-[#C9A227] bg-amber-50 doc-card">
+        <p class="text-sm text-[#2C1B3D] leading-relaxed">
+          <strong>La buena noticia:</strong> la mayoría de estos problemas son correcciones puntuales — no reconstrucciones. El sitio tiene la infraestructura correcta. Con la configuración adecuada, City Tour de Roa tiene ventaja sobre competidores en Wix porque WordPress permite optimizaciones más profundas y duraderas.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: QUÉ HAREMOS -->
+    <section class="mb-10 doc-section">
+      <h2 class="font-display text-sm sm:text-base font-bold text-white bg-[#34204A] rounded-md px-4 sm:px-5 py-3 mb-5 tracking-wide doc-bar">
+        3. Lo que incluye la optimización — Paso a paso
+      </h2>
+      <p class="text-sm text-[#6B5A7A] leading-relaxed mb-5">
+        Trabajo completo desde el primer día de pago hasta la entrega de la web operativa y posicionada:
+      </p>
+
+      <div class="space-y-3">
+
+        <div class="doc-card flex gap-4 p-4 rounded-lg border-2 border-rose-200 bg-rose-50">
+          <div class="step-num" style="background:#9f1239">!</div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between flex-wrap gap-2 mb-1">
+              <h3 class="font-bold text-sm text-[#9f1239]">Limpieza de Emergencia (primer día)</h3>
+              <span class="text-[10px] font-bold text-[#6B5A7A] bg-white px-2 py-0.5 rounded border">Día 1</span>
+            </div>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed">Eliminación inmediata de todos los tours demo (Brooklyn, Bali, Yucatán, Mykonos, etc.) y reemplazo de los datos de contacto falsos (teléfono y correo) con la información real del negocio. Esto se hace el primer día porque es un daño activo a la imagen del negocio.</p>
+          </div>
+        </div>
+
+        <div class="doc-card flex gap-4 p-4 rounded-lg border border-slate-200">
+          <div class="step-num">1</div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between flex-wrap gap-2 mb-1">
+              <h3 class="font-bold text-sm text-[#1F1330]">Configuración Completa de Yoast SEO</h3>
+              <span class="text-[10px] font-bold text-[#6B5A7A] bg-slate-100 px-2 py-0.5 rounded">Semana 1</span>
+            </div>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed">El plugin más potente de SEO ya está instalado — lo configuramos correctamente: título del sitio, descripción, sitemap completo (páginas + tours + blog), conexión con Google Search Console, y verificación del sitio ante Google para iniciar la indexación de todas las páginas.</p>
+          </div>
+        </div>
+
+        <div class="doc-card flex gap-4 p-4 rounded-lg border border-slate-200">
+          <div class="step-num">2</div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between flex-wrap gap-2 mb-1">
+              <h3 class="font-bold text-sm text-[#1F1330]">Corrección de Estructura de Títulos (H1–H2–H3)</h3>
+              <span class="text-[10px] font-bold text-[#6B5A7A] bg-slate-100 px-2 py-0.5 rounded">Semana 1</span>
+            </div>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed">Se agrega el H1 que actualmente no existe en ninguna página. Cada página recibe un título principal que le dice a Google exactamente de qué trata: "City Tour en Cartagena de Indias — City Tour de Roa", "Tour Islas del Rosario desde Cartagena", etc. Los 18 H2 y 34 H3 existentes se revisan y reordenan para que la jerarquía sea lógica.</p>
+          </div>
+        </div>
+
+        <div class="doc-card flex gap-4 p-4 rounded-lg border border-slate-200">
+          <div class="step-num">3</div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between flex-wrap gap-2 mb-1">
+              <h3 class="font-bold text-sm text-[#1F1330]">ALT Text en las 48 Imágenes del Sitio</h3>
+              <span class="text-[10px] font-bold text-[#6B5A7A] bg-slate-100 px-2 py-0.5 rounded">Semana 1–2</span>
+            </div>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed">Se agregan descripciones optimizadas a cada foto del sitio: "Vista desde la lancha en tour a Islas del Rosario desde Cartagena", "Chiva rumbera nocturna Cartagena Colombia", "Playa Blanca Barú atardecer". Esto abre el canal de Google Imágenes, que genera tráfico real especialmente para destinos turísticos.</p>
+          </div>
+        </div>
+
+        <div class="doc-card flex gap-4 p-4 rounded-lg border border-slate-200">
+          <div class="step-num">4</div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between flex-wrap gap-2 mb-1">
+              <h3 class="font-bold text-sm text-[#1F1330]">Ficha Técnica Completa para Buscadores e IA</h3>
+              <span class="text-[10px] font-bold text-[#6B5A7A] bg-slate-100 px-2 py-0.5 rounded">Semana 2</span>
+            </div>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed">El schema.org instalado dice "algo" pero Google no puede leerlo bien. Se reemplaza con Schema correcto de TourOperator + LocalBusiness con la dirección real en Cartagena, teléfono, horarios, tipos de tours y coordenadas. Esto es lo que les permite aparecer en las respuestas de ChatGPT y Google IA cuando alguien pregunta "¿qué agencia de city tour recomiendan en Cartagena?".</p>
+          </div>
+        </div>
+
+        <div class="doc-card flex gap-4 p-4 rounded-lg border border-slate-200">
+          <div class="step-num">5</div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between flex-wrap gap-2 mb-1">
+              <h3 class="font-bold text-sm text-[#1F1330]">Página Dedicada por Cada Tour Real</h3>
+              <span class="text-[10px] font-bold text-[#6B5A7A] bg-slate-100 px-2 py-0.5 rounded">Semanas 2–4</span>
+            </div>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed">Optimización de los 3 tours reales (City Roa Plan Básico, City Bahía de Roa, Barranquilla + Cartagena) y creación de páginas para los tours faltantes (Islas del Rosario, Chiva Rumbera, si aplica). Cada página con título propio, descripción SEO, fotos con ALT, precio y botón de reserva directo a WhatsApp o WooCommerce.</p>
+          </div>
+        </div>
+
+        <div class="doc-card flex gap-4 p-4 rounded-lg border border-slate-200">
+          <div class="step-num">6</div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between flex-wrap gap-2 mb-1">
+              <h3 class="font-bold text-sm text-[#1F1330]">Optimización de Metadescripciones y Títulos SEO</h3>
+              <span class="text-[10px] font-bold text-[#6B5A7A] bg-slate-100 px-2 py-0.5 rounded">Semana 3</span>
+            </div>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed">La descripción actual tiene 141 caracteres — se amplía a 200–250 caracteres con texto diseñado para que el turista haga clic. Se optimizan los títulos de cada página para incluir palabras clave como "Cartagena", "city tour", "reserva", y se diferencian de los competidores con el sello de Roa.</p>
+          </div>
+        </div>
+
+        <div class="doc-card flex gap-4 p-4 rounded-lg border border-slate-200">
+          <div class="step-num">7</div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between flex-wrap gap-2 mb-1">
+              <h3 class="font-bold text-sm text-[#1F1330]">WooCommerce: Configuración para Reservas Online Reales</h3>
+              <span class="text-[10px] font-bold text-[#6B5A7A] bg-slate-100 px-2 py-0.5 rounded">Semanas 3–4</span>
+            </div>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed">WooCommerce es un motor de ventas completo ya instalado — se configura con los productos reales, precios, moneda en COP, y flujo de reserva por WhatsApp o pago directo. Esto convierte el sitio de vitrina informativa a herramienta de ventas activa que trabaja 24/7.</p>
+          </div>
+        </div>
+
+        <div class="doc-card flex gap-4 p-4 rounded-lg border border-slate-200">
+          <div class="step-num">8</div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between flex-wrap gap-2 mb-1">
+              <h3 class="font-bold text-sm text-[#1F1330]">Google Business Profile y Envío a Buscadores</h3>
+              <span class="text-[10px] font-bold text-[#6B5A7A] bg-slate-100 px-2 py-0.5 rounded">Semana 4–5</span>
+            </div>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed">Verificación y optimización completa del perfil de Google Maps. Envío del sitemap actualizado a Google Search Console para que Google empiece a indexar todas las páginas. Esto activa el proceso de posicionamiento — sin este paso, el trabajo técnico no se traduce en visibilidad.</p>
+          </div>
+        </div>
+
+        <div class="doc-card flex gap-4 p-4 rounded-lg border border-[#C9A227] bg-amber-50">
+          <div class="step-num" style="background:#C9A227;color:#1F1330">✓</div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between flex-wrap gap-2 mb-1">
+              <h3 class="font-bold text-sm text-[#1F1330]">Entrega Final: Web Limpia, Indexada y Funcional</h3>
+              <span class="text-[10px] font-bold text-[#6B5A7A] bg-white px-2 py-0.5 rounded border">Semana 6</span>
+            </div>
+            <p class="text-xs text-[#6B5A7A] leading-relaxed">Entrega del sitio sin contenido demo, con información real, tours reales, sistema de reservas configurado, indexado por Google y verificado en Search Console. Se entrega informe antes/después con capturas. El segundo pago de <strong>$750.000 COP</strong> se efectúa en este momento.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: SOBRE EL SEO -->
+    <section class="mb-10 doc-section">
+      <h2 class="font-display text-sm sm:text-base font-bold text-white bg-[#34204A] rounded-md px-4 sm:px-5 py-3 mb-5 tracking-wide doc-bar">
+        4. Algo importante sobre los resultados en Google
+      </h2>
+      <div class="p-5 rounded-lg border border-slate-200 bg-slate-50 doc-card">
+        <p class="text-sm text-[#2C1B3D] leading-relaxed mb-3">
+          Con este servicio entregamos un sitio <strong>técnicamente correcto y listo para posicionarse</strong>. City Tour de Roa tiene una ventaja real: ya tiene el ChatGPT mencionándolo (1 vez), algo que muchos competidores no tienen todavía. Con la configuración adecuada de Schema, esa mención puede multiplicarse.
+        </p>
+        <p class="text-sm text-[#2C1B3D] leading-relaxed mb-3">
+          El SEO requiere entre <strong>3 y 6 meses</strong> para mostrar resultados sólidos en posiciones orgánicas. Lo que nadie puede prometer honestamente es un lugar específico en Google en días. Lo que sí prometemos: un sitio sin errores que dañen la imagen, con la estructura correcta para que Google lo entienda y empiece a posicionarlo.
+        </p>
+        <p class="text-sm text-[#2C1B3D] leading-relaxed">
+          <strong>Diferencia clave con otras agencias:</strong> trabajamos sobre el WordPress existente, no vendemos plataformas nuevas. El cliente conserva todo el control de su sitio.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: ACOMPAÑAMIENTO -->
+    <section class="mb-10 doc-section">
+      <h2 class="font-display text-sm sm:text-base font-bold text-white bg-[#34204A] rounded-md px-4 sm:px-5 py-3 mb-5 tracking-wide doc-bar">
+        5. Servicio Adicional: Acompañamiento Mensual de Posicionamiento
+      </h2>
+      <p class="text-sm text-[#6B5A7A] leading-relaxed mb-4">
+        Para mantener y escalar el posicionamiento mes a mes — los algoritmos cambian constantemente:
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-sm text-[#1F1330] mb-2">📝 Artículos de Blog Mensuales</h3>
+          <p class="text-xs text-[#6B5A7A] leading-relaxed">WordPress ya tiene el blog listo. Creamos 2–3 artículos por mes sobre destinos y experiencias: "Qué ver en un City Tour de Cartagena", "Mejor chiva rumbera Cartagena", "City Tour Bahía de Cartagena precio 2026". Cada artículo es una nueva puerta de entrada desde Google.</p>
+        </div>
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-sm text-[#1F1330] mb-2">📊 Monitoreo y Ajustes Mensuales</h3>
+          <p class="text-xs text-[#6B5A7A] leading-relaxed">Revisión de posiciones en Google, análisis de nuevas palabras clave, ajuste de textos, y reporte mensual con métricas claras: cuántas visitas, de dónde vienen, qué tours generan más interés.</p>
+        </div>
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-sm text-[#1F1330] mb-2">🤖 Visibilidad en IA</h3>
+          <p class="text-xs text-[#6B5A7A] leading-relaxed">El sitio ya tiene 1 mención en ChatGPT — esto se puede multiplicar. Mantenemos las fichas técnicas actualizadas con los cambios de algoritmo de Google IA, ChatGPT y Gemini para que la empresa aparezca cuando alguien pregunte por tours en Cartagena.</p>
+        </div>
+        <div class="doc-card p-4 rounded-md border border-slate-200">
+          <h3 class="font-bold text-sm text-[#1F1330] mb-2">🛒 Optimización de WooCommerce</h3>
+          <p class="text-xs text-[#6B5A7A] leading-relaxed">Revisión mensual de los productos en venta, actualización de precios por temporada, creación de nuevas páginas de tour cuando el negocio expanda su oferta, y seguimiento de las reservas online para identificar dónde se pierden clientes.</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-between p-4 rounded-lg bg-[#1F1330] text-white doc-card">
+        <div>
+          <p class="font-bold text-sm mb-0.5">Acompañamiento Mensual SEO + WordPress</p>
+          <p class="text-xs text-white/70">Sin permanencia mínima — cancele cuando quiera</p>
+        </div>
+        <div class="text-right">
+          <p class="font-display text-2xl font-bold text-[#C9A227]">$400.000</p>
+          <p class="text-xs text-white/70">COP / mes</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 6: INVERSIÓN -->
+    <section class="mb-10 doc-section">
+      <h2 class="font-display text-sm sm:text-base font-bold text-white bg-[#34204A] rounded-md px-4 sm:px-5 py-3 mb-5 tracking-wide doc-bar">
+        6. Inversión y Condiciones de Pago
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
+        <div class="doc-card p-5 rounded-lg bg-[#1F1330] text-white">
+          <p class="text-[10px] font-bold uppercase tracking-widest text-[#C9A227] mb-2">Pago 1 — Al iniciar</p>
+          <p class="font-display text-3xl font-bold text-white mb-2">$750.000 <span class="text-base font-normal text-white/60">COP</span></p>
+          <p class="text-xs text-white/70 leading-relaxed">Se realiza antes de iniciar. Incluye la limpieza de emergencia (mismo día), auditoría técnica completa, configuración de Yoast SEO, corrección de estructura H1–H3, y optimización de todas las imágenes.</p>
+        </div>
+        <div class="doc-card p-5 rounded-lg bg-[#1F1330] text-white">
+          <p class="text-[10px] font-bold uppercase tracking-widest text-[#C9A227] mb-2">Pago 2 — Al entregar</p>
+          <p class="font-display text-3xl font-bold text-white mb-2">$750.000 <span class="text-base font-normal text-white/60">COP</span></p>
+          <p class="text-xs text-white/70 leading-relaxed">Se realiza cuando se entrega el sitio web funcionando: sin contenido demo, con tours reales, WooCommerce configurado, indexado por Google y verificado en Search Console. Se entrega informe de optimización.</p>
+        </div>
+      </div>
+      <div class="p-4 rounded-lg border border-slate-200 bg-slate-50 doc-card">
+        <p class="text-[11px] font-bold uppercase tracking-wider text-[#6B5A7A] mb-2">Condiciones generales</p>
+        <ul class="text-xs text-[#6B5A7A] space-y-1.5 leading-relaxed">
+          <li>✔ El cliente conserva la propiedad completa del dominio y del sitio WordPress.</li>
+          <li>✔ El acceso de administrador al WordPress debe ser proporcionado al inicio del trabajo.</li>
+          <li>✔ La información real del negocio (teléfono, correo, dirección, descripciones de tours) debe ser entregada antes de iniciar.</li>
+          <li>✔ El cliente aprueba contenido y cambios visuales antes de publicarlos.</li>
+          <li>✔ Tiempo estimado de entrega: 5 a 6 semanas desde el primer pago.</li>
+          <li>✔ El servicio no incluye campañas de publicidad paga (Google Ads, Meta Ads).</li>
+          <li>✔ Esta propuesta tiene vigencia de <strong>15 días calendario</strong> desde la fecha de emisión.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 7: POR QUÉ NCS -->
+    <section class="mb-6 doc-section">
+      <h2 class="font-display text-sm sm:text-base font-bold text-white bg-[#34204A] rounded-md px-4 sm:px-5 py-3 mb-5 tracking-wide doc-bar">
+        7. ¿Por Qué Trabajar con NCS?
+      </h2>
+      <div class="p-5 rounded-md border-l-4 border-[#C9A227] bg-slate-50 doc-card">
+        <p class="text-sm text-[#2C1B3D] leading-relaxed mb-3">
+          City Tour de Roa tiene algo que vale: un producto real, tours con identidad propia y el sistema técnico correcto instalado. Lo que falta es que alguien con conocimiento real del mercado turístico de Cartagena termine de configurar esa herramienta.
+        </p>
+        <p class="text-sm text-[#2C1B3D] leading-relaxed mb-3">
+          Trabajo directamente sobre su WordPress — sin venderle plataformas nuevas, sin contratos de permanencia forzosa, con resultados verificables antes del segundo pago. Si al entregar el sitio no está como se prometió, no cobra el segundo 50%.
+        </p>
+        <p class="text-sm text-[#2C1B3D] leading-relaxed">
+          El diagnóstico que acaban de leer fue hecho con las mismas herramientas que usan las agencias más grandes de Colombia (Semrush, SEOQuake, Google Search Console). La diferencia es que lo hacemos con atención personalizada y a precios justos para el mercado local.
+        </p>
+        <p class="text-right text-sm font-display font-bold text-[#1F1330] mt-4">— Nohemí Carrillo S.</p>
+      </div>
+    </section>
+
+    <!-- PIE -->
+    <footer class="pt-6 mt-6 border-t-2 border-[#34204A] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-[#6B5A7A]">
+      <div class="flex items-center gap-2.5">
+        <img src="/images/ncs-logo.jpg" alt="NCS" class="w-7 h-7 rounded object-cover" />
+        <span>NCS · Nohemí Carrillo S. — Consultoría Turística y Empresarial · Cartagena</span>
+      </div>
+      <span class="text-left sm:text-right">Cel: +57 316 303 0589 · contacto@tumejortalento.com</span>
+    </footer>
+
+  </main>
+</body>
+</html>
